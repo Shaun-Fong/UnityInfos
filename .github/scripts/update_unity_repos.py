@@ -109,36 +109,77 @@ def merge_repos(existing, fetched):
     print(f"Merged repos -> added: {added}, updated: {updated}, total: {len(existing)}")
     return existing
 
-# ================= 更新 README =================
 def update_readme(repos):
-    lines = [
-        "# Unity3D Repositories Collection",
-        f"> Last updated: {datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}",
-        "---",
-        "| Name | Stars | Description | Updated |",
-        "| ---- | ----- | ----------- | ------- |"
-    ]
+    """
+    生成 Markdown 表格版 README（服务器端截断，避免水平滚动）
+    - 只展示有 description 的仓库
+    - 截断 repo 名称和 description，超出部分以 "..." 表示
+    - 在链接中使用 title 属性保存完整信息，鼠标悬停可查看（tooltip）
+    """
+    # 最大长度配置（可按需调整）
+    NAME_DISPLAY_MAX = 36       # 在表格中显示的 repo 名最大字符数（显示 owner/repo 可调小）
+    DESC_DISPLAY_MAX = 120      # 描述最大字符数
 
-    # 只包含有 description 的仓库
-    repos_with_desc = [r for r in repos.values() if r["description"]]
+    def clean_text(s: str) -> str:
+        """清理文本，去换行并替换 Markdown 表格分隔符 |"""
+        if not s:
+            return ""
+        return s.replace("\n", " ").replace("|", "｜").strip()
 
-    # 按 star 排序
-    sorted_repos = sorted(repos_with_desc, key=lambda x: x["stargazers_count"], reverse=True)
+    def truncate(s: str, max_len: int) -> str:
+        """按字符截断（简单按 codepoint），超出加省略号"""
+        if not s:
+            return ""
+        if len(s) <= max_len:
+            return s
+        return s[:max_len - 3].rstrip() + "..."
+
+    lines = []
+    lines.append("# Unity3D Repositories Collection")
+    lines.append(f"> Last updated: {datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+    lines.append("| Name | Stars | Description | Updated |")
+    lines.append("| ---- | -----:| ----------- | ------- |")
+
+    # 只保留有 description 的 repo
+    repos_with_desc = [r for r in repos.values() if r.get("description")]
+    # 按 stargazers 排序
+    sorted_repos = sorted(repos_with_desc, key=lambda x: x.get("stargazers_count", 0), reverse=True)
 
     for repo in sorted_repos:
-        name = f"[{repo['full_name']}]({repo['html_url']})"
-        stars = repo["stargazers_count"]
+        full_name = repo.get("full_name", "")               # owner/repo
+        url = repo.get("html_url", "")
+        stars = repo.get("stargazers_count", 0)
 
-        desc_clean = repo["description"].replace("\n", " ").replace("|", "-")
-        if len(desc_clean) > MAX_DESC_LENGTH:
-            desc_clean = desc_clean[:MAX_DESC_LENGTH] + "..."
+        # 只显示 repo name（即不展示 owner）或可以改成 full_name 显示
+        # 把 full_name 拆成 owner + name
+        display_name = full_name.split("/", 1)[-1] if "/" in full_name else full_name
 
-        updated = repo["updated_at"].split("T")[0]
-        lines.append(f"| {name} | {stars} | {desc_clean} | {updated} |")
+        # 清理与截断
+        desc_raw = clean_text(repo.get("description", "") or "")
+        desc_display = truncate(desc_raw, DESC_DISPLAY_MAX)
 
+        name_display = truncate(display_name, NAME_DISPLAY_MAX)
+
+        # 使用 title 显示完整信息（Hover 可以看到完整 full_name / description）
+        # Markdown 支持在链接中使用 HTML 属性（GitHub 会保留 a 的 title）
+        link_html = f'<a href="{url}" title="{full_name}">{name_display}</a>'
+        # 为 description 也添加 title 以便 hover 查看完整描述
+        desc_html = f'<span title="{desc_raw}">{desc_display}</span>'
+
+        updated = repo.get("updated_at", "").split("T")[0] if repo.get("updated_at") else ""
+
+        # 生成表格行
+        lines.append(f"| {link_html} | {stars} | {desc_html} | {updated} |")
+
+    # 写文件
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
-    print(f"README.md updated, total repos with description: {len(repos_with_desc)}")
+
+    print(f"README.md updated, total repos shown: {len(sorted_repos)}")
+
 
 # ================= 主逻辑 =================
 def main():
