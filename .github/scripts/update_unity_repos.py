@@ -124,8 +124,8 @@ def update_readme(repos, filepath=README_FILE):
         "> 自动生成的 Unity 仓库列表\n",
         f"> Last updated: {datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}\n",
         "---\n",
-        "| Name | Stars | Description | Updated |\n",
-        "| ---- | ----- | ----------- | ------- |\n"
+        "| Name | Stars | Description | Updated |",
+        "| ---- | ----- | ----------- | ------- |"
     ]
     # 按 stars 排序
     repo_list = sorted(repos.values(), key=lambda r: r.get("stargazers_count", 0), reverse=True)
