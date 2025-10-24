@@ -1,38 +1,41 @@
-name: Fetch Unity3D Repos
+name: Update Unity3D Repository List
 
 on:
   #schedule:
-  #  - cron: "0 * * * *"  # 每小时执行一次
-  #workflow_dispatch:
+  #  - cron: "0 * * * *" # 每小时执行一次
+  workflow_dispatch: # 支持手动触发
 
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.10"
 
       - name: Install dependencies
-        run: pip install requests
-
-      - name: Run fetch script
-        env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-        run: python scripts/fetch_unity_repos.py
-
-      - name: Commit and push changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          pip install requests PyYAML
+
+      - name: Run update script
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }} # 使用你的Personal Access Token
+        run: |
+          python3 .github/scripts/update_unity_repos.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "Update Unity3D repository list [$(date -u)]" || echo "No changes to commit"
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Unity3D repository list [$(date -u)]"
+            git push
+          else
+            echo "No changes to commit."
+          fi
