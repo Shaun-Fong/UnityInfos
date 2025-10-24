@@ -61,17 +61,24 @@ def fetch_repos(start_date, end_date):
             break
         data = resp.json()
         items = data.get("items", [])
+
         for i, repo in enumerate(items, start=1 + len(all_items)):
+            # 跳过没有 description 的仓库
+            if not repo.get("description"):
+                continue
+
             all_items.append(repo)
-            print(f"Fetched {i} / (max {MAX_RESULTS}) from {start_str} to {end_str}: {repo['full_name']}")
+            print(f"Fetched {len(all_items)} / (max {MAX_RESULTS}) from {start_str} to {end_str}: {repo['full_name']}")
+
             if len(all_items) >= MAX_RESULTS:
                 break
+
         if len(items) < PER_PAGE or len(all_items) >= MAX_RESULTS:
             break
         page += 1
         time.sleep(REQUEST_DELAY)
 
-    print(f"Fetched {len(all_items)} repos from {start_str} to {end_str}")
+    print(f"Fetched {len(all_items)} repos from {start_str} to {end_str} (with description)")
     return all_items
 
 # ================= 合并增量 =================
@@ -111,8 +118,13 @@ def update_readme(repos):
         "| Name | Stars | Description | Updated |",
         "| ---- | ----- | ----------- | ------- |"
     ]
+
+    # 只包含有 description 的仓库
+    repos_with_desc = [r for r in repos.values() if r["description"]]
+
     # 按 star 排序
-    sorted_repos = sorted(repos.values(), key=lambda x: x["stargazers_count"], reverse=True)
+    sorted_repos = sorted(repos_with_desc, key=lambda x: x["stargazers_count"], reverse=True)
+
     for repo in sorted_repos:
         name = f"[{repo['full_name']}]({repo['html_url']})"
         stars = repo["stargazers_count"]
@@ -126,7 +138,7 @@ def update_readme(repos):
 
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
-    print(f"README.md updated, total repos: {len(repos)}")
+    print(f"README.md updated, total repos with description: {len(repos_with_desc)}")
 
 # ================= 主逻辑 =================
 def main():
