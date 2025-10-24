@@ -1,44 +1,53 @@
 name: Update Unity3D Repository List
 
+# 每小时执行一次（UTC 时区）
 on:
-  #schedule:
-  #  - cron: "0 * * * *" # 每小时执行一次
-  workflow_dispatch: # 支持手动触发
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch: {}
+
+# 使用最小权限（我们推送使用 PAT，所以不依赖 GITHUB_TOKEN 的写权限）
+permissions:
+  contents: read
 
 jobs:
   update:
     runs-on: ubuntu-latest
-
     steps:
+      # 1) Checkout 源码：注意 persist-credentials: false，防止自动注入 GITHUB_TOKEN 到 git。
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false   # very important: prevents auto-using GITHUB_TOKEN for git operations
+          fetch-depth: 0              # ensure full history so push won't fail on refs
 
+      # 2) Setup Python（运行抓取脚本）
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: "3.11"
 
       - name: Install dependencies
         run: |
-          pip install requests PyYAML
+          python -m pip install --upgrade pip
+          pip install requests
 
+      # 3) Run your update script
+      #    脚本里应读取环境变量 API_TOKEN（下面我们把 PAT_TOKEN 传给 API_TOKEN）
       - name: Run update script
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }} # 使用你的Personal Access Token
+          API_TOKEN: ${{ secrets.PERSONAL_TOKEN }}   # 用于调用 GitHub API（脚本里读取 API_TOKEN）
         run: |
-          python3 .github/scripts/update_unity_repos.py
+          python .github/scripts/update_unity_repos.py
 
-      - name: Commit and push if changed
-        env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-        run: |
-          git config --global user.name "Shaun-Fong"
-          git config --global user.email "shaunfong@qq.com"
-          git add README.md
-          if ! git diff --cached --quiet; then
-            git commit -m "Update Unity3D repository list [$(date -u)]"
-            git push https://Shaun-Fong:${{ secrets.GITHUB_TOKEN }}@github.com/Shaun-Fong/UnityInfos.git HEAD:main
-          else
-            echo "No changes to commit."
-          fi
-
+      # 4) Commit & Push changes using marketplace action (actions-js/push)
+      #    注意：此 action 接受 github_token 输入；这里我们传入 PAT_TOKEN，以便推送有写权限
+      - name: Commit & Push changes
+        uses: actions-js/push@v1.5
+        with:
+          github_token: ${{ secrets.PERSONAL_TOKEN }}    # 使用你的 PAT（必须在仓库 Secrets 中设置 PAT_TOKEN）
+          author_name: "github-actions[bot]"
+          author_email: "github-actions[bot]@users.noreply.github.com"
+          message: "Update Unity3D repository list [skip ci] - ${{ github.run_id }}"
+          branch: "main"                            # 目标分支（按需修改）
+          directory: "."                            # 要提交的目录（默认仓库根目录）
