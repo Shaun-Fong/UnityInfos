@@ -122,7 +122,9 @@ def update_readme(repos):
         updated = repo["updated_at"].split("T")[0]
         lines.append(f"| {name} | {stars} | {desc_clean} | {updated} |")
 
-    os.makedirs(os.path.dirname(README_FILE), exist_ok=True)
+    dir_name = os.path.dirname(README_FILE)
+    if dir_name:
+        os.makedirs(dir_name, exist_ok=True)
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
     print(f"README.md updated, total repos: {len(repos)}")
