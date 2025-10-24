@@ -11,11 +11,12 @@ LAST_RUN_FILE = ".github/data/last_run_time.txt"
 README_FILE = "README.md"
 
 QUERY = "unity OR unity3d"
-BATCH_DAYS = 1       # 每批抓取的天数
-PER_PAGE = 100       # 每页抓取数量
-MAX_RESULTS = 1000   # 每次搜索最大结果数
-REQUEST_DELAY = 2    # 秒，避免触发 API rate limit
-MAX_DESC_LENGTH = 100  # description 最大长度
+BATCH_DAYS = 1           # 每批抓取的天数
+PER_PAGE = 100           # 每页抓取数量
+MAX_RESULTS = 1000       # 每次搜索最大结果数（GitHub API 限制）
+TOTAL_FETCH_LIMIT = 1000 # 每次脚本执行抓取总数限制
+REQUEST_DELAY = 2        # 秒，避免触发 API rate limit
+MAX_DESC_LENGTH = 100    # description 最大长度
 
 # ================= 辅助函数 =================
 def load_last_run():
@@ -27,6 +28,7 @@ def load_last_run():
         return "2020-01-01T00:00:00Z"
 
 def save_last_run(ts):
+    os.makedirs(os.path.dirname(LAST_RUN_FILE), exist_ok=True)
     with open(LAST_RUN_FILE, "w") as f:
         f.write(ts)
 
@@ -59,13 +61,12 @@ def fetch_repos(start_date, end_date):
             break
         data = resp.json()
         items = data.get("items", [])
-        
-        # 实时打印每条仓库
-        for idx, repo in enumerate(items, start=1 + (page-1)*PER_PAGE):
-            print(f"Fetched repo #{idx}: {repo['full_name']}")
+        for i, repo in enumerate(items, start=1 + len(all_items)):
             all_items.append(repo)
-
-        if len(items) < PER_PAGE or page * PER_PAGE >= MAX_RESULTS:
+            print(f"Fetched {i} / (max {MAX_RESULTS}) from {start_str} to {end_str}: {repo['full_name']}")
+            if len(all_items) >= MAX_RESULTS:
+                break
+        if len(items) < PER_PAGE or len(all_items) >= MAX_RESULTS:
             break
         page += 1
         time.sleep(REQUEST_DELAY)
@@ -77,7 +78,7 @@ def fetch_repos(start_date, end_date):
 def merge_repos(existing, fetched):
     added = 0
     updated = 0
-    for idx, repo in enumerate(fetched, start=1):
+    for repo in fetched:
         key = repo["full_name"]
         created_at = repo["created_at"]
         updated_at = repo["updated_at"]
@@ -87,23 +88,17 @@ def merge_repos(existing, fetched):
                 "name": repo["name"],
                 "full_name": key,
                 "html_url": repo["html_url"],
-                "description": repo.get("description", ""),
+                "description": repo.get("description") or "",
                 "stargazers_count": repo.get("stargazers_count", 0),
                 "created_at": created_at,
                 "updated_at": updated_at
             }
             added += 1
-            action = "added"
         else:
+            # 更新最后更新时间
             if existing[key]["updated_at"] != updated_at:
                 existing[key]["updated_at"] = updated_at
                 updated += 1
-                action = "updated"
-            else:
-                action = "skipped"
-
-        print(f"Processed repo #{idx}: {key} -> {action}")
-
     print(f"Merged repos -> added: {added}, updated: {updated}, total: {len(existing)}")
     return existing
 
@@ -122,18 +117,13 @@ def update_readme(repos):
         name = f"[{repo['full_name']}]({repo['html_url']})"
         stars = repo["stargazers_count"]
 
-        # 处理 description: None -> "", 去换行，替换 |，截断过长文本
-        desc_raw = repo["description"] or ""
-        desc_clean = desc_raw.replace("\n", " ").replace("|", "-")
+        desc_clean = repo["description"].replace("\n", " ").replace("|", "-")
         if len(desc_clean) > MAX_DESC_LENGTH:
             desc_clean = desc_clean[:MAX_DESC_LENGTH] + "..."
 
         updated = repo["updated_at"].split("T")[0]
         lines.append(f"| {name} | {stars} | {desc_clean} | {updated} |")
 
-    dir_name = os.path.dirname(README_FILE)
-    if dir_name:
-        os.makedirs(dir_name, exist_ok=True)
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
     print(f"README.md updated, total repos: {len(repos)}")
@@ -142,27 +132,38 @@ def update_readme(repos):
 def main():
     last_run_str = load_last_run()
     try:
-        # 支持 ISO8601 时间解析
         last_run_date = datetime.strptime(last_run_str, "%Y-%m-%dT%H:%M:%SZ")
     except ValueError:
-        # 兼容旧版 YYYY-MM-DD
         last_run_date = datetime.strptime(last_run_str, "%Y-%m-%d")
         last_run_str = last_run_date.strftime("%Y-%m-%dT%H:%M:%SZ")
 
     now = datetime.utcnow()
     existing = load_existing_repos()
+    total_fetched = 0
 
     # 分 batch 抓取历史数据
-    while last_run_date < now:
+    while last_run_date < now and total_fetched < TOTAL_FETCH_LIMIT:
         batch_end = min(last_run_date + timedelta(days=BATCH_DAYS), now)
         fetched = fetch_repos(last_run_date, batch_end)
+
+        # 超过总抓取限制则截断
+        if total_fetched + len(fetched) > TOTAL_FETCH_LIMIT:
+            fetched = fetched[:TOTAL_FETCH_LIMIT - total_fetched]
+
         existing = merge_repos(existing, fetched)
         save_repos(existing)
         update_readme(existing)
 
-        # 更新 last_run_time 为 batch 结束日期（ISO8601）
+        total_fetched += len(fetched)
+        print(f"Total fetched in this run: {total_fetched} / {TOTAL_FETCH_LIMIT}")
+
+        # 更新 last_run_time 为 batch 结束日期
         last_run_date = batch_end
         save_last_run(last_run_date.strftime("%Y-%m-%dT%H:%M:%SZ"))
+
+        if total_fetched >= TOTAL_FETCH_LIMIT:
+            print("Reached total fetch limit for this run. Stopping batch fetch.")
+            break
 
         time.sleep(REQUEST_DELAY)
 
