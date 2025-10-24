@@ -6,18 +6,16 @@ import time
 
 # ================= 配置 =================
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")  # GitHub Actions secret
-REPO_OWNER = "Shaun-Fong"
-REPO_NAME = "UnityInfos"
 DATA_FILE = ".github/data/repos.json"
+LAST_RUN_FILE = ".github/data/last_run_time.txt"
 README_FILE = "README.md"
 
 QUERY = "unity OR unity3d"
-BATCH_DAYS = 7
-PER_PAGE = 100
-MAX_RESULTS = 1000
-REQUEST_DELAY = 2  # 秒
-
-LAST_RUN_FILE = ".github/data/last_run_time.txt"
+BATCH_DAYS = 7       # 每批抓取的天数
+PER_PAGE = 100       # 每页抓取数量
+MAX_RESULTS = 1000   # 每次搜索最大结果数
+REQUEST_DELAY = 2    # 秒，避免触发 API rate limit
+MAX_DESC_LENGTH = 100  # description 最大长度
 
 # ================= 辅助函数 =================
 def load_last_run():
@@ -26,7 +24,7 @@ def load_last_run():
             return f.read().strip()
     else:
         # 初始抓取时间
-        return "2008-01-01T00:00:00Z"
+        return "2020-01-01T00:00:00Z"
 
 def save_last_run(ts):
     with open(LAST_RUN_FILE, "w") as f:
@@ -49,7 +47,7 @@ def fetch_repos(start_date, end_date):
     page = 1
     headers = {"Authorization": f"token {GITHUB_TOKEN}"}
 
-    # GitHub Search API 查询只用日期 YYYY-MM-DD
+    # GitHub Search API 查询使用 YYYY-MM-DD
     start_str = start_date.strftime("%Y-%m-%d")
     end_str = end_date.strftime("%Y-%m-%d")
 
@@ -104,7 +102,6 @@ def merge_repos(existing, fetched):
 def update_readme(repos):
     lines = [
         "# Unity3D Repositories Collection",
-        "> 自动生成的 Unity 仓库列表",
         f"> Last updated: {datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}",
         "---",
         "| Name | Stars | Description | Updated |",
@@ -115,9 +112,15 @@ def update_readme(repos):
     for repo in sorted_repos:
         name = f"[{repo['full_name']}]({repo['html_url']})"
         stars = repo["stargazers_count"]
-        desc = repo["description"].replace("\n", " ").replace("|", "-")  # 防止 Markdown 表格破坏
+
+        # 处理 description: None -> "", 去换行，替换 |，截断过长文本
+        desc_raw = repo["description"] or ""
+        desc_clean = desc_raw.replace("\n", " ").replace("|", "-")
+        if len(desc_clean) > MAX_DESC_LENGTH:
+            desc_clean = desc_clean[:MAX_DESC_LENGTH] + "..."
+
         updated = repo["updated_at"].split("T")[0]
-        lines.append(f"| {name} | {stars} | {desc} | {updated} |")
+        lines.append(f"| {name} | {stars} | {desc_clean} | {updated} |")
 
     os.makedirs(os.path.dirname(README_FILE), exist_ok=True)
     with open(README_FILE, "w", encoding="utf-8") as f:
