@@ -17,7 +17,7 @@ if not API_TOKEN:
 SEARCH_URL = "https://api.github.com/search/repositories"
 QUERY = "unity"       # 关键词
 PER_PAGE = 100        # 每页数量
-MAX_RESULTS = 200    # 每次最多抓 1000 条
+MAX_RESULTS = 1000    # 每次最多抓 1000 条
 DATA_FILE = "./github/data/repos.json"
 LAST_RUN_FILE = "./github/data/last_run_time.txt"
 README_FILE = "README.md"
