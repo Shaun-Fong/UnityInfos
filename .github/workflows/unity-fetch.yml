@@ -29,13 +29,16 @@ jobs:
           python3 .github/scripts/update_unity_repos.py
 
       - name: Commit and push if changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "Shaun-Fong"
+          git config --global user.email "shaunfong@qq.com"
           git add README.md
           if ! git diff --cached --quiet; then
             git commit -m "Update Unity3D repository list [$(date -u)]"
-            git push
+            git push https://Shaun-Fong:${{ secrets.GITHUB_TOKEN }}@github.com/Shaun-Fong/UnityInfos.git HEAD:main
           else
             echo "No changes to commit."
           fi
+
