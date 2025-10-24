@@ -117,7 +117,7 @@ def update_readme(repos):
     - 在链接中使用 title 属性保存完整信息，鼠标悬停可查看（tooltip）
     """
     # 最大长度配置（可按需调整）
-    NAME_DISPLAY_MAX = 36       # 在表格中显示的 repo 名最大字符数（显示 owner/repo 可调小）
+    NAME_DISPLAY_MAX = 28       # 在表格中显示的 repo 名最大字符数（显示 owner/repo 可调小）
     DESC_DISPLAY_MAX = 120      # 描述最大字符数
 
     def clean_text(s: str) -> str:
@@ -210,13 +210,16 @@ def main():
         total_fetched += len(fetched)
         print(f"Total fetched in this run: {total_fetched} / {TOTAL_FETCH_LIMIT}")
 
-        # 更新 last_run_time 为 batch 结束日期
-        last_run_date = batch_end
-        save_last_run(last_run_date.strftime("%Y-%m-%dT%H:%M:%SZ"))
-
+        # 如果超过总抓取限制，在中途停止，不推进 last_run_date
         if total_fetched >= TOTAL_FETCH_LIMIT:
             print("Reached total fetch limit for this run. Stopping batch fetch.")
+            # 因为当前 batch 没抓完，所以不要推进日期
+            save_last_run(last_run_date.strftime("%Y-%m-%dT%H:%M:%SZ"))
             break
+        else:
+            # 当前 batch 抓取完成，推进日期
+            last_run_date = batch_end
+            save_last_run(last_run_date.strftime("%Y-%m-%dT%H:%M:%SZ"))
 
         time.sleep(REQUEST_DELAY)
 
