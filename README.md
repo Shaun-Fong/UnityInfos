@@ -1,51 +1,78 @@
 # Unity3D Repositories Collection
-> Last updated: 2025-10-24T09:47:25Z
+> Last updated: 2025-10-24T10:19:43Z
 ---
 | Name | Stars | Description | Updated |
 | ---- | ----- | ----------- | ------- |
 | [ColinLeung-NiloCat/UnityURPUnlitScreenSpaceDecalShader](https://github.com/ColinLeung-NiloCat/UnityURPUnlitScreenSpaceDecalShader) | 1324 | Unity unlit screen space decal shader for URP. Just create a new material using this shader, then as... | 2025-10-21 |
 | [SebLague/Portals](https://github.com/SebLague/Portals) | 874 | Portals in Unity | 2025-10-23 |
 | [phi-lira/UniversalShaderExamples](https://github.com/phi-lira/UniversalShaderExamples) | 815 | Sand box project containing example shaders and assets compatible with Unity Universal Render Pipeli... | 2025-10-22 |
+| [gmhevinci/MotionFramework](https://github.com/gmhevinci/MotionFramework) | 651 | MotionFramework is unity3d game framework. | 2025-09-22 |
 | [chromealex/ecs](https://github.com/chromealex/ecs) | 552 | ECS for Unity with full game state automatic rollbacks | 2025-10-22 |
 | [mikhomak/Erbium](https://github.com/mikhomak/Erbium) | 498 | 🤺Third Person Character Controller for unity🤺 | 2025-10-22 |
 | [DonnYep/CosmosFramework](https://github.com/DonnYep/CosmosFramework) | 410 | CosmosFramework is a medium-lightweight plug-in Unity development framework . Has a rich Unity metho... | 2025-10-15 |
 | [marijnz/NativeQuadtree](https://github.com/marijnz/NativeQuadtree) | 388 | A Quadtree Native Collection for Unity DOTS | 2025-10-13 |
+| [applejag/Newtonsoft.Json-for-Unity.Converters](https://github.com/applejag/Newtonsoft.Json-for-Unity.Converters) | 386 | Converters of common Unity types for Newtonsoft.Json. Goes hand in hand with jilleJr/Newtonsoft.Json... | 2025-10-15 |
 | [Raicuparta/nomai-vr](https://github.com/Raicuparta/nomai-vr) | 367 | Outer Wilds VR Mod with 6DOF tracking and full motion control support | 2025-09-12 |
 | [AmplifyCreations/AmplifyOcclusion](https://github.com/AmplifyCreations/AmplifyOcclusion) | 309 | Full source-code for Amplify Occlusion plugin for Unity | 2025-10-21 |
 | [openmod/openmod](https://github.com/openmod/openmod) | 293 | OpenMod .NET Plugin Framework | 2025-10-13 |
+| [zulubo/SpecularProbes](https://github.com/zulubo/SpecularProbes) | 264 | Bake specular highlights into Unity Reflection Probes, allowing baked lights to cast sharp specular ... | 2025-10-24 |
 | [akauper/Addressables-AssetManager](https://github.com/akauper/Addressables-AssetManager) | 245 | Pre-loading, Synchronicity, and Pooling for Unity Addressables | 2025-10-16 |
+| [Kink3d/kPooling](https://github.com/Kink3d/kPooling) | 227 | Customizable Object Pooling for Unity. | 2025-08-26 |
+| [videolan/vlc-unity](https://github.com/videolan/vlc-unity) | 189 | LibVLC plugin for Unity to integrate multimedia playback inside your Unity apps and games | 2025-10-20 |
 | [resemble-ai/resemble-unity-text-to-speech](https://github.com/resemble-ai/resemble-unity-text-to-speech) | 177 | Resemble's voice cloning engine within Unity | 2025-10-04 |
 | [AmplifyCreations/AmplifyColor](https://github.com/AmplifyCreations/AmplifyColor) | 170 | Full source-code for Amplify Color plugin for Unity | 2025-10-21 |
 | [sarkahn/dots-roguelike](https://github.com/sarkahn/dots-roguelike) | 168 | A "traditional" ascii roguelike built using Unity's ECS/DOTS framework. | 2025-09-26 |
+| [TheAllenChou/unity-physics-constraints](https://github.com/TheAllenChou/unity-physics-constraints) | 151 | Minimalistic educational constraint-based physics framework | 2025-10-06 |
+| [gamedevserj/Shader-Graph-Experiments](https://github.com/gamedevserj/Shader-Graph-Experiments) | 144 | Various shader graph effects with Unity URP | 2025-09-26 |
+| [coderDarren/UnityCore](https://github.com/coderDarren/UnityCore) | 141 | A collection of essential game systems for Unity 3D. These generic systems can be applied to any Uni... | 2025-10-17 |
 | [handzlikchris/Unity.QuestRemoteHandTracking](https://github.com/handzlikchris/Unity.QuestRemoteHandTracking) | 139 | Oculus Quest hand tracking directly in Unity Editor for fast iteration. | 2025-09-26 |
 | [edcasillas/unity-missing-references-finder](https://github.com/edcasillas/unity-missing-references-finder) | 129 | A tool to find missing references in Unity | 2025-10-20 |
 | [AsanCai/UnityDebugViewer](https://github.com/AsanCai/UnityDebugViewer) | 119 | A powerful Unity debug tool integrated with ADB plugin | 2025-09-20 |
+| [M-Studio-M/2D-Controller](https://github.com/M-Studio-M/2D-Controller) | 114 | Player Controller for Unity 2D platforms | 2025-10-16 |
 | [keijiro/VertexAnimationJob](https://github.com/keijiro/VertexAnimationJob) | 113 | Vertex animation with C# Job System and new Mesh API | 2025-10-22 |
 | [764424567/Game_Parkour](https://github.com/764424567/Game_Parkour) | 109 | Unity开发跑酷游戏 | 2025-08-02 |
 | [PacktPublishing/Learning-C-8-by-Developing-Games-with-Unity-2020](https://github.com/PacktPublishing/Learning-C-8-by-Developing-Games-with-Unity-2020) | 105 | Learning C# 8 by Developing Games with Unity 2020, published by Packt | 2025-10-08 |
 | [azsdaja/Osnowa](https://github.com/azsdaja/Osnowa) | 102 | a roguelike framework for C# with ECS and Unity integration | 2025-10-05 |
+| [SoftwareGuy/NodeListServer](https://github.com/SoftwareGuy/NodeListServer) | 93 | Node List Server is a multi-purpose server list system. NodeJS powered and supports Docker. | 2024-11-16 |
 | [ertanturan/Unity-Helicopter-Physics](https://github.com/ertanturan/Unity-Helicopter-Physics) | 80 | Using real-world physics in a helicopter game. | 2025-10-23 |
+| [aivclab/CachedShadowMaps](https://github.com/aivclab/CachedShadowMaps) | 80 | Cached Shadow Map Solution for Unity | 2025-08-16 |
+| [elmortem/serializereferenceeditor](https://github.com/elmortem/serializereferenceeditor) | 80 | Unity SerializeReference Editor | 2025-09-23 |
+| [pCYSl5EDgo/create-unitypackage](https://github.com/pCYSl5EDgo/create-unitypackage) | 72 | A GitHub Action that create unitypackage file without Unity Editor Installation. | 2025-08-15 |
 | [AntoineCharton/Bepuphysics-Unity](https://github.com/AntoineCharton/Bepuphysics-Unity) | 67 | A bridge for Bepuphysics and Unity | 2025-10-16 |
 | [KarlRamstedt/Modular-Options-Menu](https://github.com/KarlRamstedt/Modular-Options-Menu) | 61 | A menu template and underlying system for use in the game engine Unity. | 2025-09-26 |
 | [EZhex1991/EZAssetGenerator](https://github.com/EZhex1991/EZAssetGenerator) | 58 | A bunch of texture tools for unity | 2024-12-16 |
 | [luoluoqixi/UnityCamera](https://github.com/luoluoqixi/UnityCamera) | 56 | 用于Unity的安卓与IOS打开相机、相册、保存照片的插件 | 2025-07-15 |
 | [sarkahn/rltk_unity](https://github.com/sarkahn/rltk_unity) | 55 | A framework for developing ascii based "traditional" roguelikes in Unity. | 2025-09-11 |
+| [ababilinski/unity-gpu-texture-resize](https://github.com/ababilinski/unity-gpu-texture-resize) | 47 | A method that allows for fast GPU resizing in the Unity Engine.  | 2025-09-26 |
+| [binzume/modelconv](https://github.com/binzume/modelconv) | 46 | 3d model converter for Golang | 2025-05-02 |
+| [Funnyguy77/PocketSphinxUnityDemo](https://github.com/Funnyguy77/PocketSphinxUnityDemo) | 40 | A sample Unity project showing how to use PocketSphinx. | 2025-08-15 |
 | [AlexChesser/VR_ARMS_DEMO](https://github.com/AlexChesser/VR_ARMS_DEMO) | 38 | an early of VR arms tracking in unity (2019.3)  with individual finger tracking in Oculus Quest.  Un... | 2025-05-28 |
 | [ACIIL/ACLS-Shader-1.0](https://github.com/ACIIL/ACLS-Shader-1.0) | 33 | ACLS (older 1.0). Unity HLSL VR ready "Toony/PBR hybrid" avatar shader for VRCHAT and similar platfo... | 2025-05-29 |
 | [ChrisPritchard/2d-games-with-unity-in-fsharp](https://github.com/ChrisPritchard/2d-games-with-unity-in-fsharp) | 30 | My work through the 2D games with unity book by Jared Halpern and Apress, but using F# instead of C# | 2025-08-27 |
+| [Hertzole/HertzVox-2](https://github.com/Hertzole/HertzVox-2) | 30 | An efficient and easy to use voxel framework for Unity. | 2024-07-04 |
+| [sienaiwun/Unity_PlanarShadow](https://github.com/sienaiwun/Unity_PlanarShadow) | 29 | A demo to show rendering custom draw calls in the Unity's SRP framework. Take planar shadow renderin... | 2024-12-12 |
 | [MartinKral/Spherestroyer](https://github.com/MartinKral/Spherestroyer) | 28 | [Unity Tiny] Spherestroyer- feedback is welcome | 2025-07-29 |
 | [idovelemon/UnityProj](https://github.com/idovelemon/UnityProj) | 28 | All project developed using Unity | 2025-03-30 |
 | [teobabic/Simo](https://github.com/teobabic/Simo) | 27 | An iPhone app enabling hand, head, eye and body motion tracking. | 2025-09-04 |
+| [augustdominik/FakeHeightTutorial](https://github.com/augustdominik/FakeHeightTutorial) | 27 | Unity3D 2D Top-Down Fake Height Effect tutorial | 2024-10-02 |
 | [tylearymf/psd2ugui](https://github.com/tylearymf/psd2ugui) | 26 | Parse the PSD file and generate the ugui panel. 解析psd文件并生成ugui面板 | 2025-07-21 |
+| [Mjkp/PathFinding3D](https://github.com/Mjkp/PathFinding3D) | 26 | A star 3d pathfinding in 3d voxel environment in Unity3d | 2025-06-26 |
 | [JMargevics/Unity-Texture-Packer](https://github.com/JMargevics/Unity-Texture-Packer) | 25 | Pack any color data into texture channels. | 2025-09-29 |
 | [whitesharx/httx](https://github.com/whitesharx/httx) | 25 | ⚡️ X-force HTTP/REST library for Unity ⚡️ | 2023-05-16 |
+| [keijiro/AudioDspgraphSimpleExamples](https://github.com/keijiro/AudioDspgraphSimpleExamples) | 25 | A simple clone of SimpleExamples from com.unity.audio.dspgraph | 2025-10-09 |
+| [rhemsuda/hair-physics](https://github.com/rhemsuda/hair-physics) | 25 | Realistic simulation of hair physics optimized for virtual reality (120FPS) using Unity Engine. Leve... | 2025-09-18 |
 | [liu-if-else/UnitySpectrumData](https://github.com/liu-if-else/UnitySpectrumData) | 24 | Using Unity GetSpectrumData function to turn audio data to special visual effect.  | 2025-05-20 |
 | [herbou/UnityAdmobAdsScript](https://github.com/herbou/UnityAdmobAdsScript) | 24 | admob ads in unity | 2025-04-11 |
 | [hk1ll3r/BidirectionalHorizontalLayoutGroup](https://github.com/hk1ll3r/BidirectionalHorizontalLayoutGroup) | 23 | A horizontal layout group for Unity UI that supports both left-to-right and right-to-left. | 2025-04-16 |
+| [BMEAutomatedDrive/ZalaZONE-automotive-proving-ground-virtual-simulation-models](https://github.com/BMEAutomatedDrive/ZalaZONE-automotive-proving-ground-virtual-simulation-models) | 23 | Models of the ZalaZONE automotive proving ground in different file formats for simulation software (... | 2025-10-01 |
 | [lvjincheng1998/JCEngine](https://github.com/lvjincheng1998/JCEngine) | 22 | 基于 Netty 开发的 Java 游戏服务端框架，目前提供 CocosCreator 和 Unity 的客户端SDK。 | 2024-04-01 |
 | [AlessandroPro/GauntletLevelEditor](https://github.com/AlessandroPro/GauntletLevelEditor) | 22 | Unity Editor tool used for designing, drawing, and exporting 2D levels for a Gauntlet-like game, usi... | 2025-07-13 |
 | [kevansevans/Unity-Doom-Ripper](https://github.com/kevansevans/Unity-Doom-Ripper) | 22 | Rips 2019 Re-Release's of Doom and Doom 2's IWADS from the Unity Ports | 2024-03-06 |
+| [shiena/docker-unity-accelerator](https://github.com/shiena/docker-unity-accelerator) | 22 | Docker images for Unity Accelerator | 2025-02-21 |
 | [huailiang/ray_tracing](https://github.com/huailiang/ray_tracing) | 20 | gpu-ray-tracing-in-unity implements by three-eyed-games | 2025-04-30 |
+| [ItsMeAbby/Run-Boy-Run](https://github.com/ItsMeAbby/Run-Boy-Run) | 20 | its is a 3D obstacle avoiding game. It is created using UNITY ENGINE. Its a class project game, insp... | 2025-10-24 |
+| [grantgasser/autonomous-vehicles-mlagents-unity](https://github.com/grantgasser/autonomous-vehicles-mlagents-unity) | 20 | Training a car to drive within the lanes in a Unity driving environment | 2025-10-15 |
+| [Mihail5412/Unity-Android-Files-Opener](https://github.com/Mihail5412/Unity-Android-Files-Opener) | 19 | Allows your unity android application to open files on local drive | 2025-06-26 |
 | [Comp3interactive/Unity-Vibrator](https://github.com/Comp3interactive/Unity-Vibrator) | 18 | Performs custom Vibrate functions on an Android device  and standard vibrations on iOS | 2024-12-29 |
 | [liufei2008/LGUISampleProject](https://github.com/liufei2008/LGUISampleProject) | 18 | A sample project to introduce features of LGUI. LGUI is a 3D UI solution for UnrealEngin4, it's kind... | 2025-03-01 |
 | [tetreum/peque-traffic](https://github.com/tetreum/peque-traffic) | 18 | Yet Another attempt to build a traffic system in Unity. | 2025-04-01 |
@@ -55,27 +82,40 @@
 | [smaerdlatigid/AnimationAutoencoder](https://github.com/smaerdlatigid/AnimationAutoencoder) | 16 | A variational autoencoder is trained on motion capture data and used to generate humanoid animations... | 2025-04-28 |
 | [wmcnamara/speedcube](https://github.com/wmcnamara/speedcube) | 16 | Dodge the blocks, and get the highest score. Now on the Google Play Store! | 2025-10-08 |
 | [iTzTalha/Dino-Run](https://github.com/iTzTalha/Dino-Run) | 16 | Dino Dodge! is an endless running game where have to run continuously as fast as you can while dodgi... | 2025-10-08 |
+| [RootSoft/Oculus-Quest-Setup](https://github.com/RootSoft/Oculus-Quest-Setup) | 16 | Setting up Unity for Oculus Quest Development | 2025-08-27 |
+| [guplem/UnityEssentials](https://github.com/guplem/UnityEssentials) | 15 | An asset that that works as a set of tools and features that the average Unity developer would most ... | 2025-03-30 |
+| [VergilUa/xPooling](https://github.com/VergilUa/xPooling) | 15 | Generic Pooler for Unity | 2024-03-05 |
+| [A11YTK/A11YTK](https://github.com/A11YTK/A11YTK) | 15 | The Accessibility Toolkit is an open-source Unity package for adding context-aware subtitles in VR, ... | 2025-05-05 |
 | [Dolphinos7/GBAFireEmblemInUnity](https://github.com/Dolphinos7/GBAFireEmblemInUnity) | 14 | Recreating the GameBoy Advanced Fire Emblem Game Engine In Unity | 2025-10-14 |
 | [mytechnotalent/KevinSaber](https://github.com/mytechnotalent/KevinSaber) | 14 | KevinSaber is a Oculus Rift and Oculus Quest game that is a BeatSaber clone where you strike the box... | 2025-08-27 |
 | [zitan10/2019-Unity-3D-FPS-Sandbox-Game](https://github.com/zitan10/2019-Unity-3D-FPS-Sandbox-Game) | 14 | Personal Project - 3D Sandbox shooter game made with Unity and C# | 2025-06-17 |
 | [GCodergr/Grayscale-Shaders](https://github.com/GCodergr/Grayscale-Shaders) | 14 | Grayscale Shader collection for Unity | 2025-03-02 |
+| [AlessandroPro/TheLegendOfSheridan](https://github.com/AlessandroPro/TheLegendOfSheridan) | 14 | Top-down Zelda-esque Unity game where the player can pickup weapons, attack enemies, ride a horse, a... | 2025-08-17 |
+| [unitycoder/VelodyneLidarViewer](https://github.com/unitycoder/VelodyneLidarViewer) | 14 | Velodyne Lidar Viewer For Unity | 2025-06-11 |
 | [wovencode/DatabaseManager](https://github.com/wovencode/DatabaseManager) | 13 | Wovencore Database (SQLite & mySQL) | 2024-09-17 |
 | [QFSW/QGUI](https://github.com/QFSW/QGUI) | 13 | A simple but effective IMGUI library for the Unity Engine for when EditorGUILayout is unavailable | 2025-02-12 |
 | [rellfy/transform-manipulator](https://github.com/rellfy/transform-manipulator) | 13 | Runtime Transform manipulation for Unity | 2023-06-29 |
 | [RelativeDistance/UnityBackgroundBuild](https://github.com/RelativeDistance/UnityBackgroundBuild) | 13 | Fire off a background build of your Unity project and continue working. | 2020-10-11 |
 | [EricHu33/UnityOceanWater](https://github.com/EricHu33/UnityOceanWater) | 13 | Simple Ocean water surface shader | 2024-05-13 |
+| [ashblue/unity-simple-settings](https://github.com/ashblue/unity-simple-settings) | 13 | Access static serialized files in Unity from your resources folder. Automatically initializes a runt... | 2025-01-30 |
+| [andrew-raphael-lukasik/UWolframAlpha](https://github.com/andrew-raphael-lukasik/UWolframAlpha) | 13 | WolframAlpha inside Unity | 2024-07-06 |
 | [tspoke/spacefight-2d](https://github.com/tspoke/spacefight-2d) | 12 | A test project using Unity with MLAPI networking library | 2021-10-22 |
+| [garric/ShadingPerfInUnity](https://github.com/garric/ShadingPerfInUnity) | 12 | Simulating Unreal's Shader Complexity and Quad Overdraw in Unity | 2025-10-13 |
 | [dahburj/unity-depth-camera](https://github.com/dahburj/unity-depth-camera) | 11 | Maps depth texture values to RGB channels | 2025-06-24 |
 | [Besjan/Terrain-Generator](https://github.com/Besjan/Terrain-Generator) | 11 | Generate Unity Terrain from DEM / DGM data. | 2025-08-27 |
 | [mytechnotalent/VRPong](https://github.com/mytechnotalent/VRPong) | 11 | VRPong is a Oculus Rift and Oculus Quest game that is a classic Pong clone where have two paddles to... | 2025-08-27 |
 | [bbtarzan12/Unity-Procedural-2D-Tile-Game](https://github.com/bbtarzan12/Unity-Procedural-2D-Tile-Game) | 11 | Procedural 2D Tile Game Project | 2025-05-18 |
 | [ar-tracking/UnityDTrackPlugin](https://github.com/ar-tracking/UnityDTrackPlugin) | 11 | ART DTRACK Plugin for Unity Game Engine 2019 or later | 2025-02-21 |
+| [baba-s/UniSceneDataTransfer](https://github.com/baba-s/UniSceneDataTransfer) | 11 | Unity package to easily pass data at scene transition. | 2024-09-05 |
 | [redbluegames/unity-rumble](https://github.com/redbluegames/unity-rumble) | 10 | Rumble (Screenshake + Force Feedback) framework for games made in Unity | 2025-05-14 |
 | [litefeel/Unity-RenameTools](https://github.com/litefeel/Unity-RenameTools) | 10 | RenameTools is just perfect Unity asset plugin to rename game object.  | 2024-11-20 |
 | [dyjae/LearnUnity](https://github.com/dyjae/LearnUnity) | 10 | 学习unity，教程来自B站 https://space.bilibili.com/370283072/channel/detail?cid=85776 | 2023-07-26 |
 | [kitasenjudesign/UnityVerletIntegration](https://github.com/kitasenjudesign/UnityVerletIntegration) | 10 | Simple Verlet Integration with Unity | 2023-11-25 |
 | [ElliotWood/3DPinballAI](https://github.com/ElliotWood/3DPinballAI) | 10 | 3D Space Cadet Pinball - Deep Reinforcement Learning is an open-source example of create an AI in .N... | 2024-11-28 |
 | [ollieloney95/TopDownUnityShooter](https://github.com/ollieloney95/TopDownUnityShooter) | 10 | A hobby game I made in 2016/2017  -  unity game engine, C# | 2025-02-24 |
+| [muhittinpalamutcu/Epic-Galaxy-War-Bolt](https://github.com/muhittinpalamutcu/Epic-Galaxy-War-Bolt) | 10 | Multiplayer game built with using Unity and Bolt(Client-hosted Networking for Unity) | 2024-03-31 |
+| [muhittinpalamutcu/Secure-the-Village-PUN2](https://github.com/muhittinpalamutcu/Secure-the-Village-PUN2) | 10 | Multiplayer game built with using Unity and Photon PUN2. Typical top-down shooting, death match.  | 2024-04-06 |
+| [LiberalMiser/Smooth-Unity-Orbit-Camera-Script](https://github.com/LiberalMiser/Smooth-Unity-Orbit-Camera-Script) | 10 | An old C# script of mine that enables extremely smooth camera orbiting around a point.  | 2024-08-03 |
 | [ValentinGurkov/Unity-Shader-Graph-Water](https://github.com/ValentinGurkov/Unity-Shader-Graph-Water) | 9 | Water made with shader graph in Unity 2019.3 | 2024-04-01 |
 | [christaylorcodes/WebrootUnity](https://github.com/christaylorcodes/WebrootUnity) | 9 | A PowerShell wrapper for the Webroot Unity REST API. | 2025-01-22 |
 | [NeuralVFX/facial-pose-estimation-unity](https://github.com/NeuralVFX/facial-pose-estimation-unity) | 9 | Unity Project - Realtime Facial + Headpose Estimation  (Using OpenCV, DLIB and Pytorch) | 2023-06-03 |
@@ -83,6 +123,10 @@
 | [Comp3interactive/Unity-CustomDefaultScripts](https://github.com/Comp3interactive/Unity-CustomDefaultScripts) | 9 | A collection of custom default scripts for Unity | 2023-02-27 |
 | [AdiiPrabhu/Unity-Maze-Runner-3D](https://github.com/AdiiPrabhu/Unity-Maze-Runner-3D) | 9 | An 3d maze runner game created with unity 3d and c# scripts | 2025-10-10 |
 | [muhittinpalamutcu/Spacewalkers-War-PUN2-](https://github.com/muhittinpalamutcu/Spacewalkers-War-PUN2-) | 9 | Multiplayer deathmatch game built with using Unity and unity networking package Photon Pun 2 | 2024-10-12 |
+| [songsharp/TensorFlow.Net.Unity.Demo](https://github.com/songsharp/TensorFlow.Net.Unity.Demo) | 9 | TensorFlow.Net.Unity.Demo | 2024-04-02 |
+| [postcar999/MeshSubdivision](https://github.com/postcar999/MeshSubdivision) | 9 | Mesh Subdivision using Compute Shader in Unity | 2025-09-26 |
+| [grashaar/Unity.Google-Spreadsheet-Downloader](https://github.com/grashaar/Unity.Google-Spreadsheet-Downloader) | 9 | Simple Google Spreadsheet downloader for Unity | 2024-01-30 |
+| [technobaboo/suis](https://github.com/technobaboo/suis) | 9 | Spatial Universal Interaction System (for Unity) | 2024-01-28 |
 | [xaedes/particlelife-3d-unity-ecs](https://github.com/xaedes/particlelife-3d-unity-ecs) | 8 | ParticleLife 3D in Unity DOTS ECS, Desktop, WebGL | 2024-11-06 |
 | [NuclearBand/NuclearWindowsManager](https://github.com/NuclearBand/NuclearWindowsManager) | 8 | A simple Unity library designed to manipulate UI windows. | 2024-07-14 |
 | [Mikilo/ng-publisher](https://github.com/Mikilo/ng-publisher) | 8 | Unity publisher portal integrated into Unity Editor. | 2022-10-25 |
@@ -90,11 +134,15 @@
 | [nathalie-raffray/Steering-Behaviours](https://github.com/nathalie-raffray/Steering-Behaviours) | 8 | Simulated movement of shoppers and advertisers within a mall using steering behaviours in Unity | 2025-04-28 |
 | [JimmyCushnie/PersistentData](https://github.com/JimmyCushnie/PersistentData) | 8 | Easy cross-platform data saving and loading for Unity | 2024-10-15 |
 | [AlessandroPro/ShooterGameAnalyticsVisualizer](https://github.com/AlessandroPro/ShooterGameAnalyticsVisualizer) | 8 | A Unity game that records in-game statistics in a database, and a C# Winform application to visualiz... | 2023-06-28 |
+| [sh-akira/VMCUnityWindowExtensions](https://github.com/sh-akira/VMCUnityWindowExtensions) | 8 | Unity Window Extensions for VirtualMotionCapture | 2022-10-08 |
 | [blueknightone/DialogueSystem](https://github.com/blueknightone/DialogueSystem) | 7 | A basic dialogue system for Unity | 2024-10-30 |
 | [neverSettles/VRRowing](https://github.com/neverSettles/VRRowing) | 7 | A virtual reality Unity environment simulating rowing outdoors on the water.  | 2024-12-03 |
 | [heikun288/HighPerformanceDamageText-Unity3D](https://github.com/heikun288/HighPerformanceDamageText-Unity3D) | 7 | How to use High Performance Damage Text(Unity3D) | 2025-10-12 |
 | [YaserAlOsh/2D-Water-Shader-Unity](https://github.com/YaserAlOsh/2D-Water-Shader-Unity) | 7 | A simple 2D water shader with Splashes support. ملف برمجي بسيط يحاكي حركة الماء ويدعم التأثر بالاصطد... | 2024-07-04 |
 | [dvhull/AR-Painter-App](https://github.com/dvhull/AR-Painter-App) | 7 | Simple Augmented Reality drawing App made with Unity's AR foundation framework.  | 2025-01-31 |
+| [calv00/RocketLander](https://github.com/calv00/RocketLander) | 7 | :rocket: Solo development 2D "Lunar Lander" style mobile game made in Unity. :rocket: | 2025-10-08 |
+| [wiepke/VR_Klassenzimmer](https://github.com/wiepke/VR_Klassenzimmer) | 7 | VR-Klassenzimmer | 2025-08-27 |
+| [XcantloadX/DancingLinePackage](https://github.com/XcantloadX/DancingLinePackage) | 7 | A clone of Dancing Line. Made with Unity 5 & VS 2010. | 2025-03-28 |
 | [Cewein/Spelunca](https://github.com/Cewein/Spelunca) | 6 | A game about exploring caves and killing beasts in unity | 2024-07-05 |
 | [markv12/ManagingCoroutines](https://github.com/markv12/ManagingCoroutines) | 6 | An example project for my approach to managing animation coroutines in Unity. | 2022-12-31 |
 | [Comp3interactive/Unity-Singletons](https://github.com/Comp3interactive/Unity-Singletons) | 6 | A collection of write inheritable Singleton scripts for Unity | 2023-03-19 |
@@ -106,6 +154,9 @@
 | [Anthogonyst/Synesthesia](https://github.com/Anthogonyst/Synesthesia) | 6 | An educational piano game developed in Unity | 2025-02-19 |
 | [imgspc/VFX-Theremin](https://github.com/imgspc/VFX-Theremin) | 6 | Physical VFX authoring tool for Unity using the Leap Motion | 2022-03-07 |
 | [mitay-walle/Unity-Fake-Volumetric-Light-Shader](https://github.com/mitay-walle/Unity-Fake-Volumetric-Light-Shader) | 6 | Shader based on Unity's built-in "Particles/Additive"  shader. Uses camera's forward vector and vert... | 2025-10-08 |
+| [z1125411235/UWA_Unity-Special-Effect-With-Depth](https://github.com/z1125411235/UWA_Unity-Special-Effect-With-Depth) | 6 | 利用深度信息实现扫描效果、x光效果以及护盾能量场效果。版本Unity5.6+ | 2024-02-27 |
+| [ryuuguu/ECS_EcologyOfSleep](https://github.com/ryuuguu/ECS_EcologyOfSleep) | 6 | Unity ECS version of Ecology of sleep model. | 2023-01-03 |
+| [Ajahks/OS-Quest](https://github.com/Ajahks/OS-Quest) | 6 | Open Source MMO Made in Unity | 2024-08-12 |
 | [AiFuYou/UnityDemo](https://github.com/AiFuYou/UnityDemo) | 5 | 关联博客内容的UnityDemo | 2025-07-08 |
 | [z1125411235/UWA_Pokemon-Red-Unity](https://github.com/z1125411235/UWA_Pokemon-Red-Unity) | 5 | 在Unity中复刻口袋妖怪红/蓝。 | 2024-02-19 |
 | [Nachodlv/gloomhaven](https://github.com/Nachodlv/gloomhaven) | 5 | Turn base combat game | 2024-04-18 |
@@ -119,6 +170,15 @@
 | [Xnco/GameDevStory_Unity](https://github.com/Xnco/GameDevStory_Unity) | 5 | 基于Unity开发的模拟游戏制作游戏 | 2024-08-08 |
 | [AldoAlvarez/ConcentrationGame](https://github.com/AldoAlvarez/ConcentrationGame) | 5 | A Unity 3D implementation of the Concentration game for PC and Mobile. | 2025-10-08 |
 | [FaizanDurrani/MangaDexReader](https://github.com/FaizanDurrani/MangaDexReader) | 5 | Just something thrown together in 3 hours because mangadex's reader is acting up | 2024-02-17 |
+| [codemaker2015/Speech-to-text--STT--in-unity](https://github.com/codemaker2015/Speech-to-text--STT--in-unity) | 5 | Simple game in unity to move a game object using up, down, left and right voice inputs | 2024-04-02 |
+| [yaseenmustapha/STTC-Virtual-Tour](https://github.com/yaseenmustapha/STTC-Virtual-Tour) | 5 | Unity application to view real-time sensor data in a walkthrough of the Skilled Trades and Technolog... | 2023-08-15 |
+| [mmontesinos81/HMSPlugin](https://github.com/mmontesinos81/HMSPlugin) | 5 | Huawei Mobile Services Unity Plugin | 2024-12-16 |
+| [ashblue/unity-simple-notifications](https://github.com/ashblue/unity-simple-notifications) | 5 | A simple UPM package for displaying message notifications to a user | 2022-06-16 |
+| [BigOyayubi/BLAKE3Unity](https://github.com/BigOyayubi/BLAKE3Unity) | 5 | BLAKE3 Unity Native Plugin based on Rust | 2023-12-06 |
+| [mohGhazala96/Finding-Paths-AR-Visualization](https://github.com/mohGhazala96/Finding-Paths-AR-Visualization) | 5 | A Unity project to visualise finding paths algorithms in AR | 2021-05-14 |
+| [CCheckley/Unity-Throttle-Controller](https://github.com/CCheckley/Unity-Throttle-Controller) | 5 | A small, lightweight, throttle control script for Unity | 2024-10-10 |
+| [0xArina/Unity2D-fishing-mini-game](https://github.com/0xArina/Unity2D-fishing-mini-game) | 5 | A simple game that involves catching edible fish | 2025-10-08 |
+| [salty-byte/MusicGame](https://github.com/salty-byte/MusicGame) | 5 | A music game made with Unity. | 2025-08-12 |
 | [suomilanittaja/My-Spring-Car](https://github.com/suomilanittaja/My-Spring-Car) | 4 | Open Source My Summer Car | 2025-10-03 |
 | [KIPKIPS/ShaderIntroduction](https://github.com/KIPKIPS/ShaderIntroduction) | 4 | ShaderLab,计算机图形学,线性代数应用,矩阵空间坐标变换,渲染 | 2024-02-19 |
 | [supremeleaderoforange/WarWolfWorks-x-Unity](https://github.com/supremeleaderoforange/WarWolfWorks-x-Unity) | 4 | A library with numerous systems designed to cut development time by a large amount. | 2022-03-10 |
@@ -141,6 +201,12 @@
 | [bilal-arikan/AR-Portal-World](https://github.com/bilal-arikan/AR-Portal-World) | 4 | Unity Augmented Reality Stencil Shader Portals Example | 2023-09-22 |
 | [galalmounir/unityUdpClient](https://github.com/galalmounir/unityUdpClient) | 4 | A UDP client made in Unity for the GAME3110 class | 2023-12-15 |
 | [Fungus-Light/Black_Rabbit](https://github.com/Fungus-Light/Black_Rabbit) | 4 | A 3D interactive framework | 2021-11-05 |
+| [mechaniac/AW_Hell](https://github.com/mechaniac/AW_Hell) | 4 | Unity Game  Project (Level Generator) | 2021-11-16 |
+| [ariabonczek/dots_breakout](https://github.com/ariabonczek/dots_breakout) | 4 | Breakout implemented w/ Unity's DOTS | 2021-03-18 |
+| [silencessss/pacman3d](https://github.com/silencessss/pacman3d) | 4 | pacman3d using Unity3D | 2025-08-06 |
+| [asammalik11/ZigZag](https://github.com/asammalik11/ZigZag) | 4 | A replica of the original ZigZag mobile game, made for Android devices with Unity 3D. | 2025-10-08 |
+| [Inkwalker/RogueFramework](https://github.com/Inkwalker/RogueFramework) | 4 | A framework for building turn based roguelikes on top of Unity | 2021-12-26 |
+| [MichalProtasiewicz/Healer-Symulator](https://github.com/MichalProtasiewicz/Healer-Symulator) | 4 | Mobile game - Unity | 2025-10-08 |
 | [wovencode/Tools](https://github.com/wovencode/Tools) | 3 | Wovencore Tools | 2021-12-12 |
 | [dotrungkien/eth-unity-boilerplate](https://github.com/dotrungkien/eth-unity-boilerplate) | 3 | code base for Unity with Ethereum smart contract connection | 2023-03-13 |
 | [Patrick-Machado/AVL-Tree-in-Unity](https://github.com/Patrick-Machado/AVL-Tree-in-Unity) | 3 | An dynamic AVL Tree implemented in unity | 2024-03-27 |
@@ -166,6 +232,25 @@
 | [ChessMax/TicTacToeFSharp](https://github.com/ChessMax/TicTacToeFSharp) | 3 | TicTacToe implementation with Unity & F# | 2025-08-15 |
 | [vladich11/AngleBall2D](https://github.com/vladich11/AngleBall2D) | 3 | A 2D game made in Unity for Android mobile. | 2025-10-08 |
 | [RXlung/Android-Unity---](https://github.com/RXlung/Android-Unity---) | 3 | Android/Unity大乱斗-完整双方集成交互指南 | 2022-10-17 |
+| [VideojogosLusofona/color-shape-links-ai-competition](https://github.com/VideojogosLusofona/color-shape-links-ai-competition) | 3 | AI competition for IEEE CoG 2021 | 2021-07-12 |
+| [IamGroooooot/comment-filtering-frontend](https://github.com/IamGroooooot/comment-filtering-frontend) | 3 | Unity로 댓글 필터링 프로젝트 프론트 구현하기 | 2023-04-19 |
+| [edbs08/head-coupled-perspective](https://github.com/edbs08/head-coupled-perspective) | 3 | Head-coupled perspective of a 3D scene using face tracking (python) and 3D graphics (Unity) | 2020-12-27 |
+| [Andrew-Karpinskiy/Knives-Game](https://github.com/Andrew-Karpinskiy/Knives-Game) | 3 | A 2D game for Android made with Unity. Replica of the popular game Knife Hit. | 2025-10-08 |
+| [joexi/UnityAnalyzer](https://github.com/joexi/UnityAnalyzer) | 3 | Analyze Resources In Editor | 2024-05-10 |
+| [JasonJohansson/Fates-Row](https://github.com/JasonJohansson/Fates-Row) | 3 | A 2D multiplayer platformer game developed for Android using Unity and C#. | 2025-10-08 |
+| [kalulas/Dungeon-of-Vinheim](https://github.com/kalulas/Dungeon-of-Vinheim) | 3 | Dungeon-of-Vinheim is a  asymmetric multiplayer game on PC platform which is made with Unity. This i... | 2024-08-30 |
+| [herbou/UnityAdmobUnifiedNativeAd](https://github.com/herbou/UnityAdmobUnifiedNativeAd) | 3 | integrate admob ads in unity (Unified native ad) | 2025-04-11 |
+| [yasudabo/Unity_Editor_DuplicateEx](https://github.com/yasudabo/Unity_Editor_DuplicateEx) | 3 | Unity Editor Duplicate Extension | 2022-03-11 |
+| [jazli1999/Interlocked](https://github.com/jazli1999/Interlocked) | 3 | C# course project, puzzle solving game implemented with Unity, based on another already-existed game... | 2021-12-23 |
+| [JacopodeAraujo/WheelchairDrivingSimulation](https://github.com/JacopodeAraujo/WheelchairDrivingSimulation) | 3 | The Wheelchair Driving Simulation is a Unity developed VR simulation for driving a wheelchair throug... | 2024-01-21 |
+| [Swaelo/1x1Textures](https://github.com/Swaelo/1x1Textures) | 3 | 1x1 Resolution Textures of various colors I use in Unity to set the colors of various gameobjects, c... | 2022-07-01 |
+| [JayTWWM/Space-Surfers_Empty](https://github.com/JayTWWM/Space-Surfers_Empty) | 3 | A unity space game. | 2023-12-19 |
+| [pferreirafabricio/game-wood-breaker](https://github.com/pferreirafabricio/game-wood-breaker) | 3 | 🕹 Um game desenvolvido no estilo Breakout (Atari) com Unity e C# | 2023-09-08 |
+| [herbou/Unituts__Exit-confirmation-popup](https://github.com/herbou/Unituts__Exit-confirmation-popup) | 3 | unity tutorial , exit confirmation popup UI | 2025-04-11 |
+| [TheSeanLavery/Automatic_Version_Icon](https://github.com/TheSeanLavery/Automatic_Version_Icon) | 3 | Automatically increases build number and generates an icon to overlay on the screen for debug purpos... | 2023-12-03 |
+| [HuKeren/LearnUnityShader](https://github.com/HuKeren/LearnUnityShader) | 3 | 学习Unity Shader过程中的一些记录，特效，动画Demo。 | 2023-04-14 |
+| [WinCisky/MyTinyTinyProject](https://github.com/WinCisky/MyTinyTinyProject) | 3 | A small project based on Unity's Project Tiny preview package v0.20.0 (based on DOTS with pure ECS) | 2025-03-18 |
+| [Cc618/Deadly-Science](https://github.com/Cc618/Deadly-Science) | 3 | S2 project for EPITA by team Custos Carceris | 2020-10-10 |
 | [KIPKIPS/FSM](https://github.com/KIPKIPS/FSM) | 2 | 实现有限状态机 | 2024-02-19 |
 | [uezo/NLogFactoryForUnity](https://github.com/uezo/NLogFactoryForUnity) | 2 | A simple NLog logger factory including UnityConsoleTarget. | 2024-12-19 |
 | [rellfy/PPSDemo](https://github.com/rellfy/PPSDemo) | 2 | Example Unity project using the Processor-Profile System pattern | 2020-01-11 |
@@ -217,6 +302,44 @@
 | [architJanugade/SatelliteSurvival-Unity](https://github.com/architJanugade/SatelliteSurvival-Unity) | 2 | This is a hyper casual mini game Made for a portfolio in which the main character is the satellite w... | 2023-12-18 |
 | [Drakon0168/ShaderandVFXGraph](https://github.com/Drakon0168/ShaderandVFXGraph) | 2 | Trying to learn how to use shader and vfx graph in unity 2019 | 2022-03-07 |
 | [doodad-games/bombardier](https://github.com/doodad-games/bombardier) | 2 | Hyper-casual bomber digger game. Unity 2019.4.28f1. Mobile + PC + Web | 2025-10-08 |
+| [SarangMohaniraj/Pathfinding](https://github.com/SarangMohaniraj/Pathfinding) | 2 | A* Pathfinding implementation in Unity3D | 2025-03-31 |
+| [FilamentGames/RuleScript](https://github.com/FilamentGames/RuleScript) | 2 | Rule-based entity and scripting system for Unity3d | 2021-02-23 |
+| [adcimon/com.adcimon.unity-extension](https://github.com/adcimon/com.adcimon.unity-extension) | 2 | Library with core functionalities. | 2024-06-02 |
+| [GaelleMarais/facial-recognition](https://github.com/GaelleMarais/facial-recognition) | 2 | Facial Recognition in Unity using OpenCV | 2024-03-15 |
+| [chesiren/Portal-Testing-Field](https://github.com/chesiren/Portal-Testing-Field) | 2 | A re-creation of portal in unity | 2025-03-20 |
+| [favoyang/upm-ci-samples-example](https://github.com/favoyang/upm-ci-samples-example) | 2 | Example for creating upm branch with GitHub Action and handle the Samples folder | 2025-06-04 |
+| [amirb401/Shit-Man---Android-Arcade-Game](https://github.com/amirb401/Shit-Man---Android-Arcade-Game) | 2 | Repository for my Unity game called Shitman | 2025-10-08 |
+| [olivialynn/Android-TV-Launcher-Boilerplate](https://github.com/olivialynn/Android-TV-Launcher-Boilerplate) | 2 | Boilerplate for making an Android TV launcher in Unity | 2025-07-12 |
+| [shumm7/POSsys](https://github.com/shumm7/POSsys) | 2 | 学校で使用するPOSをUnityで作っています | 2025-09-10 |
+| [Makintomo04/ARFranceFYP](https://github.com/Makintomo04/ARFranceFYP) | 2 | 🥐My Final Year Project App, entitled ExploreFranceAR where I utilised Unity3D and the Vuforia framew... | 2021-07-10 |
+| [xiaoyuechen/einu](https://github.com/xiaoyuechen/einu) | 2 | EINU Engine | 2020-12-15 |
+| [ZerlenZhang/QuickStartTools](https://github.com/ZerlenZhang/QuickStartTools) | 2 | 自己学习Unity以来所学知识，所写过的代码，“框架”，通用功能的总结 | 2024-06-30 |
+| [KID421/Unity_Practice_TeleportAndFade](https://github.com/KID421/Unity_Practice_TeleportAndFade) | 2 | Unity 練習：傳送與淡入淡出效果 | 2021-05-26 |
+| [mtakagi/Unity-Crypto](https://github.com/mtakagi/Unity-Crypto) | 2 | Unity で使う暗号化クラス群 | 2024-11-17 |
+| [theParadox42/EFE-Unity](https://github.com/theParadox42/EFE-Unity) | 2 | Escape From Earth Unity Project | 2023-01-28 |
+| [KHN190/the-biography](https://github.com/KHN190/the-biography) | 2 | Marble Shader in Unity using compute API. | 2022-05-07 |
+| [jowenzero/zeds-playground-demo](https://github.com/jowenzero/zeds-playground-demo) | 2 | A 2D sidescroller game demo made using Unity C# | 2020-01-16 |
+| [thonsesujit/Rope2](https://github.com/thonsesujit/Rope2) | 2 | Rope2 is a Unity3D project it uses physic components to built a rope and to make the rope look more ... | 2023-01-12 |
+| [UnrealGameLab/Unity3D_2020_UnrealGamelabs_Dancers](https://github.com/UnrealGameLab/Unity3D_2020_UnrealGamelabs_Dancers) | 2 | Unity3D_2020_UnrealGamelabs_Dancers | 2023-11-15 |
+| [z1125411235/Unity-Music-Visualizer](https://github.com/z1125411235/Unity-Music-Visualizer) | 2 | Unity的音乐可视化项目。 | 2024-02-27 |
+| [z1125411235/Metaballs-in-Unity](https://github.com/z1125411235/Metaballs-in-Unity) | 2 | Unity 3D实现元球和行进立方体算法 | 2024-02-27 |
+| [z1125411235/Kino-Vision](https://github.com/z1125411235/Kino-Vision) | 2 | Unity的帧可视化实用程序 | 2024-02-27 |
+| [z1125411235/Video-Player-Effects](https://github.com/z1125411235/Video-Player-Effects) | 2 | VideoPlayer的实验特效（Unity 5.6新功能） | 2023-07-05 |
+| [thetiger756/Bunny_Vikings_Pac_Man_Repository](https://github.com/thetiger756/Bunny_Vikings_Pac_Man_Repository) | 2 | This is our place to maintain our builds and unity project files | 2020-01-30 |
+| [Tuiaa/tamagotchi](https://github.com/Tuiaa/tamagotchi) | 2 | Unity Tamagotchi game | 2024-10-05 |
+| [sdsmnc221/mapbox-unity-pocketdroids](https://github.com/sdsmnc221/mapbox-unity-pocketdroids) | 2 | Following the tutorial to create PokcetDroids, a Pokemon Go Clone with Mapbox | 2022-01-10 |
+| [dhanasureshr/3dGAME](https://github.com/dhanasureshr/3dGAME) | 2 | THIS IS THE UNITY 3D GAME PROJECT REPOSITORY | 2025-01-12 |
+| [64-bit/NeuralBurst](https://github.com/64-bit/NeuralBurst) | 2 | Expiremental framwork for nerual networks in Unity using Job system & Burst | 2022-04-15 |
+| [z1125411235/HdrpVatExample](https://github.com/z1125411235/HdrpVatExample) | 2 | 具有Unity著色器圖和視覺效果圖的VAT（頂點動畫紋理） | 2021-10-18 |
+| [CamileDahdah/MysticalCave](https://github.com/CamileDahdah/MysticalCave) | 2 | Developed a 3D mobile game using unity Game Engine. It is about a bat that uses special waves to nav... | 2025-10-08 |
+| [CamileDahdah/ManazelApp](https://github.com/CamileDahdah/ManazelApp) | 2 | Developed an interactive 3D mobile app using Unity Game Engine. I used 360 panorama images to displa... | 2025-10-08 |
+| [Avatarchik/SandboxGame](https://github.com/Avatarchik/SandboxGame) | 2 | 🐱‍👤A sandbox game built by Unity. | 2024-01-15 |
+| [wlgys8/QuickScreenCapture](https://github.com/wlgys8/QuickScreenCapture) | 2 | quick screen capture for unity editor | 2025-07-21 |
+| [nicbarker/swingstar](https://github.com/nicbarker/swingstar) | 2 | Swingstar is a 2d arcade game built in Unity. | 2024-10-19 |
+| [realim1/CS489-country-road-game](https://github.com/realim1/CS489-country-road-game) | 2 | Unity game inspired by the song 'Take Me Home, Country Road' by John Denver | 2020-02-21 |
+| [GameActions/GameActions](https://github.com/GameActions/GameActions) | 2 | Easy to use actions that help develop games faster (Unity engine only) | 2024-02-09 |
+| [Wrathen/Wizard-Wars](https://github.com/Wrathen/Wizard-Wars) | 2 | Online 1v1 Wizard Wars Game Made in Unity C# | 2020-01-21 |
+| [Lucifer39/Aww-thats-cube](https://github.com/Lucifer39/Aww-thats-cube) | 2 | My first time developing a game using Unity. | 2024-07-23 |
 | [0x2CA/GravityMotorcycle-Unity3D](https://github.com/0x2CA/GravityMotorcycle-Unity3D) | 1 | Unity Game Gravity Motorcycle | 2020-01-02 |
 | [UnrealGameLab/unity3d_car_terrain](https://github.com/UnrealGameLab/unity3d_car_terrain) | 1 | unity3d_car_terrain | 2020-05-24 |
 | [guanghuhappysf128/roborts_unity3d_sim](https://github.com/guanghuhappysf128/roborts_unity3d_sim) | 1 | Unity 3D simulation environment for ICRA AI challenge | 2023-01-28 |
@@ -360,6 +483,88 @@
 | [RINNUXEI/Umbrella](https://github.com/RINNUXEI/Umbrella) | 1 | A Unity asset using Google Sheets for storing and retrieving data. | 2023-06-28 |
 | [catunlock/Ourcraft](https://github.com/catunlock/Ourcraft) | 1 | A terrain deformable game with Multi Agent based NPCs | 2024-12-23 |
 | [eugeneloza/lacerti-plague](https://github.com/eugeneloza/lacerti-plague) | 1 | An OOP excercise in Unity 3D. Hopefully it'll end up as a Fly Grinder Lite RPG battle system, and ve... | 2023-12-10 |
+| [doodad-games/unitower](https://github.com/doodad-games/unitower) | 1 | Tower defence made for GMTK Game Jam 2019. Unity 2019.3.1f1. Mobile + PC + Web | 2025-10-08 |
+| [Danand/StaticEvil](https://github.com/Danand/StaticEvil) | 1 | `static` keyword is evil (Unity edition) | 2021-05-27 |
+| [ashwinrisbood/MyOpenWorld](https://github.com/ashwinrisbood/MyOpenWorld) | 1 | Developed on Unity3D | 2020-06-26 |
+| [salepape/collaborative-scatterplot-rendering](https://github.com/salepape/collaborative-scatterplot-rendering) | 1 | Development of Virtual Reality interactive techniques for collaborative and immersive multivariate D... | 2020-08-01 |
+| [olivercrush/UnityExperiences](https://github.com/olivercrush/UnityExperiences) | 1 | A few personal experiences/tutorials on Unity | 2020-11-25 |
+| [matt-the-wizard/UnityRpgCourse](https://github.com/matt-the-wizard/UnityRpgCourse) | 1 | https://www.udemy.com/course/unityrpg | 2020-01-15 |
+| [AlfinH/Unity2D-GameCasual2](https://github.com/AlfinH/Unity2D-GameCasual2) | 1 | Game pilah sampah organik dan non-organik | 2024-06-04 |
+| [brunovelosodossantos26/JogoTcc](https://github.com/brunovelosodossantos26/JogoTcc) | 1 | Aprendendo Unity | 2023-03-08 |
+| [maxpngit/Unity_Lessons](https://github.com/maxpngit/Unity_Lessons) | 1 | Lesson for step by step Scene creation | 2024-09-06 |
+| [Xiink/Unity-bingo-git](https://github.com/Xiink/Unity-bingo-git) | 1 | A simple bingo sample test and git | 2022-03-31 |
+| [SabinMG/MonsterFight-Unity](https://github.com/SabinMG/MonsterFight-Unity) | 1 | Turn-Based Combat Game | 2022-01-06 |
+| [jamila59/To_Do_List_DATABASE](https://github.com/jamila59/To_Do_List_DATABASE) | 1 | create database using Unity | 2021-03-15 |
+| [minism/hotel-client-unity](https://github.com/minism/hotel-client-unity) | 1 | A Unity client implementation for the hotel master API | 2025-08-12 |
+| [InnovationRobotics/bobcatRocks](https://github.com/InnovationRobotics/bobcatRocks) | 1 | Unity Simulation + Bobcat + Rocks | 2024-03-04 |
+| [HomamAl/AngelsCommUNITY](https://github.com/HomamAl/AngelsCommUNITY) | 1 | Navigation page and database not completed with some errors | 2020-07-12 |
+| [SyneruJDorner/Universal-Ingame-Recorder--Unity-](https://github.com/SyneruJDorner/Universal-Ingame-Recorder--Unity-) | 1 | A simple game/editor recorder for unity using FFMPEG. | 2020-12-29 |
+| [DardanIljazi/AR-Unity-Abstract-Quiz](https://github.com/DardanIljazi/AR-Unity-Abstract-Quiz) | 1 | An abstract Quiz made with Unity and AR Foundation | 2021-04-21 |
+| [KID421/XUEMI_Unity_2DGame_Tutorial](https://github.com/KID421/XUEMI_Unity_2DGame_Tutorial) | 1 | 學米 - 2D 遊戲 - 教學專案 | 2021-02-01 |
+| [favoyang/upm-ci-example](https://github.com/favoyang/upm-ci-example) | 1 | Example for creating upm branch with GitHub Action | 2020-01-15 |
+| [kinemic/kinemic-gesture-sdk-example-unity-3d](https://github.com/kinemic/kinemic-gesture-sdk-example-unity-3d) | 1 | Sample code for using Kinemic Gesture SDK in Unity | 2022-01-20 |
+| [victoria-lo/Territory-Defense](https://github.com/victoria-lo/Territory-Defense) | 1 | Turn-based strategy defense game made via Unity | 2024-11-09 |
+| [jessechancy/animation-game](https://github.com/jessechancy/animation-game) | 1 | Animation game in Unity with openCV and python | 2024-03-20 |
+| [babak-ss/MeshCreatorTool](https://github.com/babak-ss/MeshCreatorTool) | 1 | A unity tool for creating mesh in code | 2020-04-26 |
+| [Vanitas99/Beleuchtung_Rendering](https://github.com/Vanitas99/Beleuchtung_Rendering) | 1 | Little Game in theme of Shadows using Unity Engine. | 2021-03-01 |
+| [crockb/GraduationGame](https://github.com/crockb/GraduationGame) | 1 | Repository for the Unity code supporting the CS 467 - Team Raptor - Final Project | 2024-11-26 |
+| [AlessandroPro/LunarLanderGame](https://github.com/AlessandroPro/LunarLanderGame) | 1 | A modern Unity 3D recreation of the classic 1979 Atari game, Lunar Lander. | 2020-01-24 |
+| [larsonpaul/WastelandWheeler](https://github.com/larsonpaul/WastelandWheeler) | 1 | A Unity-based game developed as a group project for CMPT 306: Game Mechanics. | 2020-11-09 |
+| [lamj1/MyBuddy-Pet-Simulator](https://github.com/lamj1/MyBuddy-Pet-Simulator) | 1 | Senior design project for course CEN4914. MyBuddy is a pet simulator with augmented reality and voic... | 2021-03-03 |
+| [thonsesujit/cut_the_rope_Unity3D](https://github.com/thonsesujit/cut_the_rope_Unity3D) | 1 | This is the source code for a Cut the Rope. Here the rope is created using ridid bodies that are bei... | 2022-10-05 |
+| [mdvulfix/UnityLearning](https://github.com/mdvulfix/UnityLearning) | 1 | My leaning assets | 2022-08-22 |
+| [University-of-Greenwich-Games-Dev-Soc/GdsPlayground](https://github.com/University-of-Greenwich-Games-Dev-Soc/GdsPlayground) | 1 | A git repo for GDS members to play around with inside Unity. | 2020-10-23 |
+| [hansmichaels/bang-bang-unity](https://github.com/hansmichaels/bang-bang-unity) | 1 | an Artificial Intelligence in Games class project | 2022-11-14 |
+| [VagnerBomJesus/GameSpaceShooter](https://github.com/VagnerBomJesus/GameSpaceShooter) | 1 | Game in Unity C# | 2020-04-27 |
+| [KJ-Waller/DDPG-Unity-PyTorch](https://github.com/KJ-Waller/DDPG-Unity-PyTorch) | 1 | An implementation of Deep Deterministic Policy Gradients using PyTorch running running on Unity ML-A... | 2020-07-16 |
+| [scatteredcorp/game](https://github.com/scatteredcorp/game) | 1 | BilleGateCoin game made with Unity | 2020-05-25 |
+| [quantumsheep/unicy](https://github.com/quantumsheep/unicy) | 1 | Unity-like API in C++ | 2023-09-08 |
+| [MohawkD/GJJ-testing-project](https://github.com/MohawkD/GJJ-testing-project) | 1 | Unity project where we test stuff | 2020-02-02 |
+| [Okba28/ProjectNorthStar](https://github.com/Okba28/ProjectNorthStar) | 1 | A small AR visualization Expirement  | 2020-07-04 |
+| [sbyeol3/A-VOCA-DO](https://github.com/sbyeol3/A-VOCA-DO) | 1 | 📱 AR based Mobile Application for Eng-Voca Education of Kids  🥑 | 2021-03-11 |
+| [brucehow/2d-platformer](https://github.com/brucehow/2d-platformer) | 1 | A simple 2D platformer game made with Unity and C# | 2022-09-25 |
+| [shirograhm/Ability-Rush](https://github.com/shirograhm/Ability-Rush) | 1 | A small Unity-based game for a Game Design class. | 2020-01-30 |
+| [vamuigua/Ninja-Danger](https://github.com/vamuigua/Ninja-Danger) | 1 | Ninja Danger is a Top-down shooter game made in Unity.  | 2022-06-09 |
+| [gizzmo123456/ComponentListView](https://github.com/gizzmo123456/ComponentListView) | 1 | Simple unity class to get all components of type from scene or game objects and store in dictionary ... | 2022-09-22 |
+| [TheMatiaz0/This-Game-Is-Broken](https://github.com/TheMatiaz0/This-Game-Is-Broken) | 1 | Repository for This Game Is Broken, game created for Global Game Jam 2020: https://globalgamejam.org | 2020-03-08 |
+| [cyapa/Unity](https://github.com/cyapa/Unity) | 1 | unity developments | 2020-07-06 |
+| [wtianzi/udp_unity_hearratemonitor](https://github.com/wtianzi/udp_unity_hearratemonitor) | 1 | A udp client in unity to receive and display heart rate data | 2021-04-15 |
+| [DanielOS96/Useful_Unity_Scripts](https://github.com/DanielOS96/Useful_Unity_Scripts) | 1 | A collection of useful unity scripts I have made through various projects. | 2021-04-30 |
+| [KahVee/terrain-generator](https://github.com/KahVee/terrain-generator) | 1 | Unity Random Terrain Generator | 2023-05-19 |
+| [Maverick099/Rocket-Jump](https://github.com/Maverick099/Rocket-Jump) | 1 | Just trying out game design using Unity 3D.  | 2020-05-05 |
+| [niguiecandy/curved-animators](https://github.com/niguiecandy/curved-animators) | 1 | Simple animation solution using AnimationCurve for Unity | 2022-07-08 |
+| [Refsa/ReInput](https://github.com/Refsa/ReInput) | 1 | Input System for Unity. Hybrid between InputManager and InputSystem. | 2021-04-23 |
+| [z1125411235/Kino-Bloom](https://github.com/z1125411235/Kino-Bloom) | 1 | Unity引擎实现的发光（Bloom）效果 | 2021-10-18 |
+| [JIARC777/CS434_M02_DV01_SpawnSystems](https://github.com/JIARC777/CS434_M02_DV01_SpawnSystems) | 1 | Spawning system from Prototype and Factory pattern implementations from Baron's "Hands On Game Devel... | 2021-09-28 |
+| [YasirNacak/Desker](https://github.com/YasirNacak/Desker) | 1 | AR Desk Design Application | 2020-02-23 |
+| [shoshanimayan/Tower-Stack-AR](https://github.com/shoshanimayan/Tower-Stack-AR) | 1 | a tower stacking game in AR, the block moves around quickly and you must press a the screen to have ... | 2024-02-17 |
+| [geonhuiy/BumRush](https://github.com/geonhuiy/BumRush) | 1 | Tower defense game featuring Hobos and Rats build on Unity | 2025-10-08 |
+| [KingSlayer06/SunnyLand](https://github.com/KingSlayer06/SunnyLand) | 1 | 2D Platformer game made using Unity3D. | 2022-04-10 |
+| [pjasani/UnitySafetyDrills](https://github.com/pjasani/UnitySafetyDrills) | 1 | Virtual Safety Drills - Unity Game Engine | 2022-03-15 |
+| [edcson/python-unity-socket-](https://github.com/edcson/python-unity-socket-) | 1 | python+unity+socket通信demo | 2020-01-17 |
+| [lilyhlou/unity-AI-minions](https://github.com/lilyhlou/unity-AI-minions) | 1 | working with 3d audio & AI minions in Unity | 2020-09-01 |
+| [Williano/Native-Cpp-Unity-Plugin](https://github.com/Williano/Native-Cpp-Unity-Plugin) | 1 | Native C/C++ library integration with Unity as Plugins | 2020-01-18 |
+| [Seanm07/pickle-plugin](https://github.com/Seanm07/pickle-plugin) | 1 | Unity plugin for Game Pickle mobile functions | 2025-10-08 |
+| [jorgezer0/NEW_ECS_Ships](https://github.com/jorgezer0/NEW_ECS_Ships) | 1 | New iteration of my studies in Unity DOTS | 2020-02-20 |
+| [alex-boyd/ship](https://github.com/alex-boyd/ship) | 1 | WIP hex-based roguelike built in Unity. It's pirate themed! | 2021-06-20 |
+| [agh372/Procedural-Terrain-Generation](https://github.com/agh372/Procedural-Terrain-Generation) | 1 | Procedural mesh voxel terrain generation with various topologies using Perlin Noise while using UVs ... | 2021-06-21 |
+| [parikshitsaikia1619/AI_agent_playing_PONG](https://github.com/parikshitsaikia1619/AI_agent_playing_PONG) | 1 | Developing a classic pong game with a minimalistic 2.5D graphics and AI implementation in Unity. | 2020-10-23 |
+| [soft-eng-practicum/good-vibes](https://github.com/soft-eng-practicum/good-vibes) | 1 | Good Vibes is an Android application developed in Unity that is an anonymous messaging app for all G... | 2020-12-24 |
+| [Szugalew/Unity-Gravity-Simulation](https://github.com/Szugalew/Unity-Gravity-Simulation) | 1 | Simulating orbital mechanics in Unity | 2020-07-27 |
+| [alexismorin/Unity-Template](https://github.com/alexismorin/Unity-Template) | 1 | My personal non-VR Unity template  | 2021-12-17 |
+| [GrandNewStart/Unity_Spot_The_Difference](https://github.com/GrandNewStart/Unity_Spot_The_Difference) | 1 | my second test project game for Unity development | 2022-11-05 |
+| [z1125411235/UWA_Unity-ImageEffects](https://github.com/z1125411235/UWA_Unity-ImageEffects) | 1 | Unity的后处理效果 | 2021-10-18 |
+| [MyronWare/SeedDiscover](https://github.com/MyronWare/SeedDiscover) | 1 | AR application developed in Unity to identify seeds | 2020-01-18 |
+| [SpandanR13/Game-Dev](https://github.com/SpandanR13/Game-Dev) | 1 | This is where i store my unity 3D stuff. | 2022-08-20 |
+| [LefanTan/FloatingIsland](https://github.com/LefanTan/FloatingIsland) | 1 | This is a hackathon unity project made by Tom, Andy and Lefan | 2022-01-11 |
+| [z1125411235/Sprite-Glow](https://github.com/z1125411235/Sprite-Glow) | 1 | Unity游戏引擎实现的精灵发光效果 | 2021-10-18 |
+| [NaxHPL/Platoon-Clone](https://github.com/NaxHPL/Platoon-Clone) | 1 | A clone of the Ni No Kuni casino game Platoon. Made in Unity 2019.1.8f1. | 2023-04-14 |
+| [VorapratR/ARblueCompassWithUnity](https://github.com/VorapratR/ARblueCompassWithUnity) | 1 | ์Navigate Indoor App , create by unity3D | 2023-04-06 |
+| [AQaddora/UnityTips](https://github.com/AQaddora/UnityTips) | 1 | Unity Tips | 2020-03-05 |
+| [jviaches/StreetRacer](https://github.com/jviaches/StreetRacer) | 1 | User avoid car collision during racing events | 2024-04-02 |
+| [Margeli/GroceryList-Unity](https://github.com/Margeli/GroceryList-Unity) | 1 | App for daily needs. groceries list, to-do list... | 2022-11-01 |
+| [LAEEQ18/unity-2d](https://github.com/LAEEQ18/unity-2d) | 1 | tic tac game using unity | 2020-08-30 |
+| [MaximPolyaev/Block-Boom](https://github.com/MaximPolyaev/Block-Boom) | 1 | Android Game C# UNITY | 2025-10-08 |
 | [TheDevelolper/Unity3D-Oculus-VR-Boilerplate](https://github.com/TheDevelolper/Unity3D-Oculus-VR-Boilerplate) | 0 | A Boilerplate project for starting Oculus Projects | 2020-01-03 |
 | [koopastrong/Unity3rdPersonController](https://github.com/koopastrong/Unity3rdPersonController) | 0 | A sample of a third person controller implemented by me in Unity3D. | 2020-01-03 |
 | [priyankaprakasan/Unity](https://github.com/priyankaprakasan/Unity) | 0 | Watson TextToSpeech | 2020-01-03 |
@@ -1022,3 +1227,380 @@
 | [JIARC777/CubeThon-CS455](https://github.com/JIARC777/CubeThon-CS455) | 0 | Cubethon is a simple unity runner tutorial from Brackeys: https://www.youtube.com/watch?v=IlKaB1etri... | 2020-04-25 |
 | [sebastien-bigot/projet-slither-2017](https://github.com/sebastien-bigot/projet-slither-2017) | 0 | Projet consistant à recréer le jeu slither.io sous Unity, en C#, orienté objet. Projet réalisé en DU... | 2020-01-12 |
 | [shrey27tri01/Zense-Project](https://github.com/shrey27tri01/Zense-Project) | 0 | This is a game made in the Unity game development engine. A much simpler version of the famous game,... | 2020-04-21 |
+| [zambari/Kntrl.Unity3D](https://github.com/zambari/Kntrl.Unity3D) | 0 | A handful of scripts that handle value transformation, damping, following | 2020-02-08 |
+| [gpman3d/Unity3D_ETC](https://github.com/gpman3d/Unity3D_ETC) | 0 | 유니티 3D 관련 여러가지 잡다한 것들. | 2020-01-14 |
+| [ltreu/UNITY](https://github.com/ltreu/UNITY) | 0 | Unity module | 2020-01-14 |
+| [G-DL/Unity](https://github.com/G-DL/Unity) | 0 | Test game in Unity | 2020-03-31 |
+| [KeronPlummer-dev/outtecast](https://github.com/KeronPlummer-dev/outtecast) | 0 | Unity3d Game Developer | 2020-01-13 |
+| [emre-odabas/SoapSlicing](https://github.com/emre-odabas/SoapSlicing) | 0 | Unity3d Soap Slicing Game | 2020-01-15 |
+| [rkaundinya/Mr.-Robot-Does-Stuff](https://github.com/rkaundinya/Mr.-Robot-Does-Stuff) | 0 | 2D Platformer made in Unity3D | 2020-02-19 |
+| [AmeliaMae/UnityProjects](https://github.com/AmeliaMae/UnityProjects) | 0 | Just messing around in Unity | 2020-01-15 |
+| [xzp3094997376/UnityAPI](https://github.com/xzp3094997376/UnityAPI) | 0 | this is a respo for Unity API test | 2020-01-13 |
+| [nukadelic/UnityMLAgents](https://github.com/nukadelic/UnityMLAgents) | 0 | ml-agents containing only unity assets to be used as project submodule | 2020-01-13 |
+| [sINFkemiku/UnityGame](https://github.com/sINFkemiku/UnityGame) | 0 | Unity3dGame | 2020-01-14 |
+| [Kaiymu/UnityPresentation](https://github.com/Kaiymu/UnityPresentation) | 0 | Small project used to present some basic Unity's feature.  | 2020-01-14 |
+| [DragosMoldovanu/UnityProjects](https://github.com/DragosMoldovanu/UnityProjects) | 0 | Personal Unity Game Projects | 2020-01-13 |
+| [DejanLjubej/UnityProjectAITD](https://github.com/DejanLjubej/UnityProjectAITD) | 0 | Action Tower Defense made with Unity 3D | 2020-01-24 |
+| [SamuelClose/UnityGame01](https://github.com/SamuelClose/UnityGame01) | 0 | my Unity Game | 2021-05-06 |
+| [phillsv87/UnityAppCenterTest](https://github.com/phillsv87/UnityAppCenterTest) | 0 | Test project using AppCenter to build a Unity App | 2020-02-13 |
+| [SameerKhowaja/SafeZone-Unity2D](https://github.com/SameerKhowaja/SafeZone-Unity2D) | 0 | Working with animation to player and enemy | 2020-01-30 |
+| [TranDucHuyVnuHcmUs/Mobile_AR-BusiCard_UnityApp](https://github.com/TranDucHuyVnuHcmUs/Mobile_AR-BusiCard_UnityApp) | 0 | Đây là front-end app được làm bằng Unity, chạy trên Android. Chỉ là phiên bản thử nghiệm. | 2020-01-14 |
+| [SameerKhowaja/Bird-Endless-Flying-Unity2D](https://github.com/SameerKhowaja/Bird-Endless-Flying-Unity2D) | 0 | Endless Bird Flying Game with new animations | 2020-01-30 |
+| [Ando-O7/ball_rolling](https://github.com/Ando-O7/ball_rolling) | 0 | practice Unity | 2020-01-17 |
+| [dna06/drinkingGAME](https://github.com/dna06/drinkingGAME) | 0 | Unity GroupWork | 2020-01-13 |
+| [misocorea/HiddenSectionReport](https://github.com/misocorea/HiddenSectionReport) | 0 | Unity VR  | 2020-01-13 |
+| [hugooftw/hftw](https://github.com/hugooftw/hftw) | 0 | unity dev | 2020-01-13 |
+| [PseudoDeveloper-Noob/Unity-Noobs](https://github.com/PseudoDeveloper-Noob/Unity-Noobs) | 0 | Unity game creation | 2024-10-28 |
+| [kszyni1/Unity-Game](https://github.com/kszyni1/Unity-Game) | 0 | My unity game | 2020-01-14 |
+| [EUNJIHA/Unity-MySQL](https://github.com/EUNJIHA/Unity-MySQL) | 0 | Unity-MySQL connection | 2020-01-13 |
+| [MichaelMess/Lushen](https://github.com/MichaelMess/Lushen) | 0 | New on Unity | 2020-01-14 |
+| [zhao-xi/Unity_tanks](https://github.com/zhao-xi/Unity_tanks) | 0 | unity tutorial project | 2020-01-17 |
+| [mindsgn/Seni](https://github.com/mindsgn/Seni) | 0 | unity racing game | 2020-02-17 |
+| [iDudiHU/OBI_UNITY](https://github.com/iDudiHU/OBI_UNITY) | 0 | Practice_Project_Unity | 2020-01-13 |
+| [Feiyang-Yang/CSE450A-Video-Game-Programming](https://github.com/Feiyang-Yang/CSE450A-Video-Game-Programming) | 0 | C# and Unity | 2020-01-14 |
+| [CornerScape/Unity_CustomLog](https://github.com/CornerScape/Unity_CustomLog) | 0 | Unity colorful log | 2020-01-15 |
+| [bloolizard/space-shooter](https://github.com/bloolizard/space-shooter) | 0 | Unity First Project | 2020-02-19 |
+| [IsaacMu/Crazy-Driver](https://github.com/IsaacMu/Crazy-Driver) | 0 | Unity3D game, which user controll a driver to get higher score | 2020-01-14 |
+| [cramsan1/Carrera](https://github.com/cramsan1/Carrera) | 0 | Made in Unity | 2020-01-13 |
+| [SamuelCloutier/UNITY-GAME](https://github.com/SamuelCloutier/UNITY-GAME) | 0 | Game made with tutorial | 2020-01-13 |
+| [EunHyuk/ECM_Unity](https://github.com/EunHyuk/ECM_Unity) | 0 | Easy Character Movement | 2020-01-13 |
+| [lesmiskin/unity-test](https://github.com/lesmiskin/unity-test) | 0 | Test repo for Game Jam preparation | 2020-01-14 |
+| [lbn11/unity-day](https://github.com/lbn11/unity-day) | 0 | shader function | 2020-01-14 |
+| [HarmanBhutani/CounterStrike_Unity](https://github.com/HarmanBhutani/CounterStrike_Unity) | 0 | This is the game developed using Unity over open source Game FPS. | 2020-01-13 |
+| [code-thomasl/sfs_project_unity](https://github.com/code-thomasl/sfs_project_unity) | 0 | Super Fast Square | 2020-01-29 |
+| [RoydDevs/Unity-2D](https://github.com/RoydDevs/Unity-2D) | 0 | Unity 2D - Text101 - NumberWizard - BlockBreaker | 2020-04-14 |
+| [birnei033/Game-Development-With-Unity](https://github.com/birnei033/Game-Development-With-Unity) | 0 | Game Development With Unity | 2020-01-13 |
+| [sansanalamsyah/Menu-Game-Unity](https://github.com/sansanalamsyah/Menu-Game-Unity) | 0 | Latihan Game Unity Dicoding | 2020-01-13 |
+| [MichaelBridgette/Unity-Flashlight-Shooter](https://github.com/MichaelBridgette/Unity-Flashlight-Shooter) | 0 | 2D overhead shooter with lighting playing a big role | 2023-03-31 |
+| [csudhtoro/BrickWave](https://github.com/csudhtoro/BrickWave) | 0 | Unity Brick Breaker Game | 2020-02-06 |
+| [fmtoog/TankUnityGame](https://github.com/fmtoog/TankUnityGame) | 0 | 3d tank 2 player game | 2020-02-10 |
+| [fbarreira/unity-save-system](https://github.com/fbarreira/unity-save-system) | 0 | A unity asset for saving and loading serialized data. | 2020-01-14 |
+| [glipR/Sudoku-Solver](https://github.com/glipR/Sudoku-Solver) | 0 | Unity Implementation of Sudoku | 2020-08-05 |
+| [gorod-old/unity-scene-transition](https://github.com/gorod-old/unity-scene-transition) | 0 | A short lesson on how to make transitional animations between Unity scenes. | 2020-01-13 |
+| [alexmalyutindev/unity-interface-serialization](https://github.com/alexmalyutindev/unity-interface-serialization) | 0 | Interface serialization feature for Unity Engine. | 2022-09-05 |
+| [DanyZy/Planets](https://github.com/DanyZy/Planets) | 0 | Unity procedural planet generator | 2020-10-29 |
+| [Sergey626-ctrl/CreatForGame](https://github.com/Sergey626-ctrl/CreatForGame) | 0 | Creating for Game Unity | 2020-01-14 |
+| [RAYN15/rayngtasanandreas](https://github.com/RAYN15/rayngtasanandreas) | 0 | compilacion san andreas unity | 2020-01-14 |
+| [Ballred95/fpsmodded](https://github.com/Ballred95/fpsmodded) | 0 | practive fps in unity | 2020-01-13 |
+| [NordyVlasman/Liwwa](https://github.com/NordyVlasman/Liwwa) | 0 | Team Serval unity project | 2020-01-14 |
+| [Thisisforunity/Chad](https://github.com/Thisisforunity/Chad) | 0 | This is for unity | 2020-01-14 |
+| [OryzaSatifha/testing](https://github.com/OryzaSatifha/testing) | 0 | test github for unity | 2020-01-13 |
+| [skarnl/unity--005-glitch-garden](https://github.com/skarnl/unity--005-glitch-garden) | 0 | The Glitch Garden section (7) of the Udemy course Unity 2D | 2020-01-14 |
+| [gaypunkposer/hackaz-unity-workshop-files](https://github.com/gaypunkposer/hackaz-unity-workshop-files) | 0 | Files created to be used with a Unity workshop, designed for complete beginners. | 2020-12-05 |
+| [PawPatrolRubble/myUnity2DGame](https://github.com/PawPatrolRubble/myUnity2DGame) | 0 | this is just a entry level 2D game made during learning of unity2D | 2020-01-14 |
+| [Pabilito/Daftcode-Unity-For-Beginners](https://github.com/Pabilito/Daftcode-Unity-For-Beginners) | 0 | Mobile game basics, project developed during course led by Daftcode  | 2025-10-08 |
+| [LakshyaKhatri/My-First-Unity-Game](https://github.com/LakshyaKhatri/My-First-Unity-Game) | 0 | This is my very first unity game created along with a YouTube tutorial. | 2021-09-27 |
+| [Tanttinator/PerlinNoise](https://github.com/Tanttinator/PerlinNoise) | 0 | Perlin noise asset for Unity | 2021-06-29 |
+| [Kayrim/FirstGame](https://github.com/Kayrim/FirstGame) | 0 | First game build on Unity | 2020-01-14 |
+| [mita-sdama/Unity-Banana-Rush-2D](https://github.com/mita-sdama/Unity-Banana-Rush-2D) | 0 | Game 2D Monkey Collect Bananas | 2020-01-15 |
+| [Algo-code/Unity-3D-Shooting-Game](https://github.com/Algo-code/Unity-3D-Shooting-Game) | 0 | C# Scripts for a Unity 3D first shooter game | 2020-01-14 |
+| [mita-sdama/Unity-Funny-Foody-3D](https://github.com/mita-sdama/Unity-Funny-Foody-3D) | 0 | Game 3D using Unity to Collect Food Receipt | 2020-01-15 |
+| [andrew-knickman/unity-national-parks-game-demo](https://github.com/andrew-knickman/unity-national-parks-game-demo) | 0 | Unity WebGL game contribution to National Parks site project. | 2020-01-16 |
+| [codezjg/MagicPaths](https://github.com/codezjg/MagicPaths) | 0 | A toy unity game for Practice | 2020-04-06 |
+| [codezjg/WordsGame](https://github.com/codezjg/WordsGame) | 0 | Technologies: Unity. Desc: Words game project. | 2021-01-01 |
+| [abg007889/CoconutShooter](https://github.com/abg007889/CoconutShooter) | 0 | Unity Web Game. Studied at CUSCS | 2024-08-11 |
+| [ynaoto/FramerateVSyncTest-4.6.7](https://github.com/ynaoto/FramerateVSyncTest-4.6.7) | 0 | FramerateVSyncTest for Unity 4.6.7 | 2020-01-15 |
+| [TheoBernard97/Roll-a-ball](https://github.com/TheoBernard97/Roll-a-ball) | 0 | 3D Platformer game with Unity (2015) | 2020-06-01 |
+| [Prernaswarna/Cubtastic](https://github.com/Prernaswarna/Cubtastic) | 0 | A simple game made using unity | 2020-07-07 |
+| [raj577/A-Shooter2D-game-in-unity](https://github.com/raj577/A-Shooter2D-game-in-unity) | 0 | Hop on the space war and fight for the galaxy as the enemy ships arrive with great effects this is t... | 2020-01-13 |
+| [hackernix10/PolyShooter](https://github.com/hackernix10/PolyShooter) | 0 | Another multiplayer shooter written in Unity/Photon | 2023-09-25 |
+| [Riehil/Laser-Defender](https://github.com/Riehil/Laser-Defender) | 0 | Practicing Git with Laser Defender Unity project | 2020-01-13 |
+| [Cgoodw/IGME480](https://github.com/Cgoodw/IGME480) | 0 | Current Topics in Games- Unity, Processsing, C# | 2020-01-13 |
+| [Syfrex/BehaviourTree](https://github.com/Syfrex/BehaviourTree) | 0 | Created my own behaviour tree in Unity | 2020-01-14 |
+| [timelord666/starshooter](https://github.com/timelord666/starshooter) | 0 | Simple Unity game made by following tutorial | 2020-01-14 |
+| [MirzaIrfanraza/LevelEditor](https://github.com/MirzaIrfanraza/LevelEditor) | 0 | Level Editor for creating levels in unity. | 2020-02-29 |
+| [SaadShaikh00/RageQuit](https://github.com/SaadShaikh00/RageQuit) | 0 | A ball rolling game designed using unity | 2020-01-13 |
+| [moritztng/reacher-agent](https://github.com/moritztng/reacher-agent) | 0 | Solving the Unity Reacher Environment with DDPG | 2021-05-23 |
+| [NullAndVoid21/Terrain](https://github.com/NullAndVoid21/Terrain) | 0 | Terrain generation in Unity using Perlin noise. | 2020-01-13 |
+| [prajnanBhuyan/Glitch-Garden](https://github.com/prajnanBhuyan/Glitch-Garden) | 0 | A mini tower defense game built using Unity | 2020-02-18 |
+| [AnnaPlatek/GlitchGarden](https://github.com/AnnaPlatek/GlitchGarden) | 0 | Glitch Garden - the game from unity 2D course | 2020-04-13 |
+| [RajatPatel5/com.Rajat.CommanTickManager](https://github.com/RajatPatel5/com.Rajat.CommanTickManager) | 0 | Single update for running whole game in unity. | 2020-01-13 |
+| [imabhijit/ARCore-Learning](https://github.com/imabhijit/ARCore-Learning) | 0 | For Learning how to user ARCore with Unity | 2020-01-13 |
+| [krone128/SidePunch](https://github.com/krone128/SidePunch) | 0 | Unity game inspired by One Finger Death Punch | 2025-03-17 |
+| [alexlehner3868/Endless-Runner](https://github.com/alexlehner3868/Endless-Runner) | 0 | A C# game made in Unity with 3D graphics | 2025-04-26 |
+| [JuliaZhoglik/CubeAndBall](https://github.com/JuliaZhoglik/CubeAndBall) | 0 | Select figure and change color. Unity 2019.1.0f2 | 2020-02-27 |
+| [cdowling-acn/fizzbuzz](https://github.com/cdowling-acn/fizzbuzz) | 0 | FizzBuzz TDD example with C and Unity test framework | 2020-01-15 |
+| [aryannnmalhotra/Survivor](https://github.com/aryannnmalhotra/Survivor) | 0 | Survivor is a single player goal-oriented survival based RPG wherein the player has to scavenge and ... | 2021-04-30 |
+| [kawabart/ThreeButtons](https://github.com/kawabart/ThreeButtons) | 0 | Very simple recruitment project | 2025-02-09 |
+| [larsz-o/NumberWizardWithDogs](https://github.com/larsz-o/NumberWizardWithDogs) | 0 | A guess the number search game - with dogs | 2020-01-14 |
+| [Pho3niX90/PoliticalSurvival](https://github.com/Pho3niX90/PoliticalSurvival) | 0 | PoliticalSurvival uMod Rust plugin | 2020-04-03 |
+| [Joraffe/tactics_mvc](https://github.com/Joraffe/tactics_mvc) | 0 | Sandbox for messing around with Unity and Tactics Game Dev | 2020-02-17 |
+| [brendanperry05/Hexmesh-Duo](https://github.com/brendanperry05/Hexmesh-Duo) | 0 | Arcade shooter developed in Unity for the iOS App Store | 2020-01-13 |
+| [T-NhanNguyen/Kintaro](https://github.com/T-NhanNguyen/Kintaro) | 0 | A unity game project for my love in video games | 2020-03-27 |
+| [Gerpar/Conductor_DigitalFatigue](https://github.com/Gerpar/Conductor_DigitalFatigue) | 0 | GitHub repository used for storing our game; Conductor's Unity files. | 2020-04-23 |
+| [MirzaIrfanraza/CommanTickManager](https://github.com/MirzaIrfanraza/CommanTickManager) | 0 | It Allows Unity developer to update game from only one update.  | 2020-02-29 |
+| [skypekitten9/BOIDS](https://github.com/skypekitten9/BOIDS) | 0 | Implementing BOIDS in Unity to create a flocking behaviour in 3D. | 2020-01-15 |
+| [RajatPatel5/CommanTickManager](https://github.com/RajatPatel5/CommanTickManager) | 0 | It Allows Unity developer to update game from only one update.  | 2020-01-14 |
+| [DreamsOfAshes/pongDemo](https://github.com/DreamsOfAshes/pongDemo) | 0 | Demo of a simple Pong game in Unity, scripted with C# | 2020-01-14 |
+| [basiliskarakitsios/myFPSproject](https://github.com/basiliskarakitsios/myFPSproject) | 0 | A simple FPS game I did using Unity 19.2.17f1 | 2020-01-14 |
+| [PeterSchreuderMA/PowerLeap](https://github.com/PeterSchreuderMA/PowerLeap) | 0 | Using Unity and a Leap-Motion we are creating a game  | 2020-01-14 |
+| [bhuvana-sridhara/deep-space](https://github.com/bhuvana-sridhara/deep-space) | 0 | A 2D game in Unity depicting an astronaut experiencing multiple gravity levels. | 2021-03-26 |
+| [MikeSavitski/DungeonGenerator](https://github.com/MikeSavitski/DungeonGenerator) | 0 | Repository for a random dungeon map generator created for Unity in C# | 2020-01-14 |
+| [JuneWang0521/Macaron-mooN](https://github.com/JuneWang0521/Macaron-mooN) | 0 | 使用Unity开发的2.5D解谜游戏 | 2020-01-13 |
+| [kbuhalov/Advapi32TestProject](https://github.com/kbuhalov/Advapi32TestProject) | 0 | Represents the sample unity project to reproduce "Unable to find advapi32" error. | 2020-01-13 |
+| [JM4ier/blobs](https://github.com/JM4ier/blobs) | 0 | a small game where you can play against a friend | 2020-01-14 |
+| [wix3000/GifPlayer](https://github.com/wix3000/GifPlayer) | 0 | A unity Gifs player for uGUI base on gif to png spritesheet feature. | 2020-01-14 |
+| [royce-git/Galaxy-Shooter](https://github.com/royce-git/Galaxy-Shooter) | 0 | A 2D space fighter game I made by following a Udemy course on Unity | 2020-01-20 |
+| [davidrball/BHviz_withshader](https://github.com/davidrball/BHviz_withshader) | 0 | C# and shader code for visualizing simulations saved to cubic CSV files in Unity | 2020-01-17 |
+| [Cbasx/I-need-help-pls](https://github.com/Cbasx/I-need-help-pls) | 0 | I'm making a game in unity and I need help with this C# script | 2020-01-13 |
+| [dth88/castlefightv1](https://github.com/dth88/castlefightv1) | 0 | some snippets from one of my unity games in case I ever want to finish it | 2021-05-01 |
+| [siralpega/parkgame](https://github.com/siralpega/parkgame) | 0 | A 3D platformer game with 3 levels, collectible coins, and obstacles written in C# using Unity. | 2021-11-19 |
+| [JIARC777/CubeThon-CS434](https://github.com/JIARC777/CubeThon-CS434) | 0 | Cubethon is a simple unity runner tutorial from Brackeys: https://www.youtube.com/watch?v=IlKaB1etri... | 2020-04-25 |
+| [Lomt1k/Infire](https://github.com/Lomt1k/Infire) | 0 | Шутер с видом сверху. По окончанию разработки меня приняли в компанию MYTONA на позицию Unity-разраб... | 2025-03-26 |
+| [ninjapretzel/waifuExplorer](https://github.com/ninjapretzel/waifuExplorer) | 0 | better explorer harness for https://waifulabs.com/ using unity so I can bootleg their api without co... | 2020-10-11 |
+| [valdelazarus/K-O](https://github.com/valdelazarus/K-O) | 0 | This is a game project made with Unity for COMP313-004 Winter 2020 Group 4 Project - Centennial Coll... | 2020-05-15 |
+| [thedole/Argon-Assault](https://github.com/thedole/Argon-Assault) | 0 | My take on Argon Assault from Complete C# Unity Developer 3D: Learn to Code Making Games course on U... | 2020-02-01 |
+| [Chuck5ta/My_Voxel_Terrain](https://github.com/Chuck5ta/My_Voxel_Terrain) | 0 | This is my Unity game engine version of a tool to generate a terrain made up of manipulatable voxels... | 2020-12-01 |
+| [tlan95/Udacity-DRL-nanodegree-project1-Navigation](https://github.com/tlan95/Udacity-DRL-nanodegree-project1-Navigation) | 0 | My code and report of Udacity DRL nanodegree project1 Navigation | 2020-05-23 |
+| [JIARC777/CubeThon-CS434-Production](https://github.com/JIARC777/CubeThon-CS434-Production) | 0 | Cubethon is a simple unity runner tutorial from Brackeys: https://www.youtube.com/watch?v=IlKaB1etri... | 2020-04-25 |
+| [bllhlskr/School-Project-Awoken-Pumpkin](https://github.com/bllhlskr/School-Project-Awoken-Pumpkin) | 0 | Bahçeşehir University students programming Languages lesson project. | 2022-01-21 |
+| [Teakt/AGD_Teak_FirstAssignment](https://github.com/Teakt/AGD_Teak_FirstAssignment) | 0 | This assignment will give you the opportunity to learn more about programming AI behaviour. This ass... | 2020-01-28 |
+| [MRGRAVITY817/Unity-C-Sharp-Scripting](https://github.com/MRGRAVITY817/Unity-C-Sharp-Scripting) | 0 | Practicing C sharp from Unity website course | 2020-12-15 |
+| [Jasfa96/Unity](https://github.com/Jasfa96/Unity) | 0 |  Unity projects | 2020-01-15 |
+| [Jacob-Ming-Yan/I-Have-to-Take-This](https://github.com/Jacob-Ming-Yan/I-Have-to-Take-This) | 0 | A videogame project made in Unity3D | 2020-01-15 |
+| [ErikKimsey/Tubular](https://github.com/ErikKimsey/Tubular) | 0 | Unity3D, Blender - Move through a soothing tube. | 2020-01-18 |
+| [TroydonAnabolic/UnityTutorial](https://github.com/TroydonAnabolic/UnityTutorial) | 0 | My version folowing the unity tutorial on udemy: https://www.udemy.com/course/unity-master-video-gam... | 2020-01-15 |
+| [ShawJia23/UnitySRP](https://github.com/ShawJia23/UnitySRP) | 0 | learn | 2020-01-15 |
+| [kuman514/UnityPractice](https://github.com/kuman514/UnityPractice) | 0 | Practicing Unity by making a cube mover | 2020-01-19 |
+| [ioc0/UnityLearn](https://github.com/ioc0/UnityLearn) | 0 | UnityLearningPathe | 2020-04-06 |
+| [VRAR-VN/UnityCollab](https://github.com/VRAR-VN/UnityCollab) | 0 | First Collaborate | 2020-01-15 |
+| [onsclom/unityFencing](https://github.com/onsclom/unityFencing) | 0 | Remaking fencing project in Unity. | 2020-01-20 |
+| [TheWhiteGuardian/UnityEditorExtended](https://github.com/TheWhiteGuardian/UnityEditorExtended) | 0 | A library of open-source methods and classes to upgrade the default Component editors, and to provid... | 2020-01-15 |
+| [Harout77/CART315_Harout_Kullukian](https://github.com/Harout77/CART315_Harout_Kullukian) | 0 | Unity Project | 2020-02-05 |
+| [TheGentleGiant/MultiplayerGame](https://github.com/TheGentleGiant/MultiplayerGame) | 0 | Multiplayer Game Unity | 2020-02-06 |
+| [numanhassan247/tower_defence](https://github.com/numanhassan247/tower_defence) | 0 | Unity game demo | 2020-01-15 |
+| [paresh-developer/ABelieverUnityGame](https://github.com/paresh-developer/ABelieverUnityGame) | 0 | Game in Unity | 2020-01-15 |
+| [Malcolmnixon/UrbanAssets](https://github.com/Malcolmnixon/UrbanAssets) | 0 | Unity Urban Assets | 2020-01-18 |
+| [tbngo/thrust_game](https://github.com/tbngo/thrust_game) | 0 | Unity Thrust Game | 2020-01-18 |
+| [esameth/FloppyFish](https://github.com/esameth/FloppyFish) | 0 | Game in Unity | 2020-01-15 |
+| [brunos3d/Unity-CSharp-Battle-City-Test](https://github.com/brunos3d/Unity-CSharp-Battle-City-Test) | 0 | 🚧 UNITY - Um breve remake de Battle-City em Unity. | 2021-05-30 |
+| [doriveramirez/VrUnity](https://github.com/doriveramirez/VrUnity) | 0 | Game made in Unity for Virtual Reality! | 2020-08-02 |
+| [realmichaelye/Unity-Search](https://github.com/realmichaelye/Unity-Search) | 0 | Unity Search bridges the information gap between English speakers & the rest of the world by giving ... | 2020-12-21 |
+| [sejoon86/drlnd_unity_setup](https://github.com/sejoon86/drlnd_unity_setup) | 0 | to ask questions of how to setup drlnd unity setup | 2021-10-06 |
+| [gorod-old/unity-splitview-menu](https://github.com/gorod-old/unity-splitview-menu) | 0 | Educational video on the topic: split view menu, canvas element, working with canvas, animation of 2... | 2020-01-16 |
+| [SamuelBoerlin/Cineast-In-Unity](https://github.com/SamuelBoerlin/Cineast-In-Unity) | 0 | Example project showing how to interactively perform Cineast 3D similarity queries in Unity | 2020-01-15 |
+| [DeeJayOsum/First_Unity_Game](https://github.com/DeeJayOsum/First_Unity_Game) | 0 | A very basic unity game | 2020-11-09 |
+| [ronaldcard/fizzbuzz_c_unity](https://github.com/ronaldcard/fizzbuzz_c_unity) | 0 | base project setup for C and Unity | 2020-01-15 |
+| [vivianneyee/Tetris-Game-Unity](https://github.com/vivianneyee/Tetris-Game-Unity) | 0 | Tetris-inspired game made on unity | 2020-01-15 |
+| [Winter4T2H/r8MovementTest](https://github.com/Winter4T2H/r8MovementTest) | 0 | A new Unity project | 2020-01-15 |
+| [eidng8/Space-Flight-Unity-DOTS](https://github.com/eidng8/Space-Flight-Unity-DOTS) | 0 | An exploration of Unity | 2020-02-16 |
+| [AxelG48/Hello-World](https://github.com/AxelG48/Hello-World) | 0 | First Unity homework project  | 2020-01-15 |
+| [sap03110/unity_roll_a_ball](https://github.com/sap03110/unity_roll_a_ball) | 0 | 2019-1 Digital Media Project | 2020-01-16 |
+| [ethan309/unity-roll-a-ball](https://github.com/ethan309/unity-roll-a-ball) | 0 | "Roll-a-Ball" Unity Game | 2020-01-22 |
+| [arcanephoenix/unity-2d-gamedevhq](https://github.com/arcanephoenix/unity-2d-gamedevhq) | 0 | Project created with the help of GameDevHQ | 2020-01-17 |
+| [BahShaman/UdemyUnityCU3](https://github.com/BahShaman/UdemyUnityCU3) | 0 | From Udemy Unity Course Unit 3 | 2020-01-21 |
+| [hotmaneil/WebAPICoreDapperUnity](https://github.com/hotmaneil/WebAPICoreDapperUnity) | 0 | ASP.NET Core,由Unity.Microsoft.DependencyInject,Dapper.SimpleCRUD組成之Web API專案 | 2020-01-15 |
+| [fiinz/unity-atari-tetris-replica](https://github.com/fiinz/unity-atari-tetris-replica) | 0 | Replica of Atari 1988 Tetris Arcade | 2025-03-29 |
+| [BWoood/RocketLauncher](https://github.com/BWoood/RocketLauncher) | 0 | 3D Game, made in Unity | 2020-01-15 |
+| [anuragtiwari/ModuleHub](https://github.com/anuragtiwari/ModuleHub) | 0 | Important Common Scripts in Unity | 2020-03-03 |
+| [drogovozDP/Klevch](https://github.com/drogovozDP/Klevch) | 0 | my first game in unity | 2020-12-02 |
+| [Oozey/Semester-3-game-project](https://github.com/Oozey/Semester-3-game-project) | 0 | Semester 3 Unity Arduino school project | 2020-01-15 |
+| [YifanLi1997/MArshMAllow](https://github.com/YifanLi1997/MArshMAllow) | 0 | A game created along learning Unity 2D | 2020-02-11 |
+| [dimitrimarcello/LeapShooter](https://github.com/dimitrimarcello/LeapShooter) | 0 | A leap shooter game made with unity | 2020-01-15 |
+| [Oleg-A-LLIto/NutBuster-web](https://github.com/Oleg-A-LLIto/NutBuster-web) | 0 | my first unity game, nothing special yet | 2022-06-06 |
+| [bia24/PureMVC_Demo](https://github.com/bia24/PureMVC_Demo) | 0 | A simple Unity Demo using PureMVC framework | 2020-01-15 |
+| [HysenChan/ZombieToys](https://github.com/HysenChan/ZombieToys) | 0 | Unity实现<僵尸玩具> | 2020-02-01 |
+| [AdmiralOctavius/LevelTestingProject](https://github.com/AdmiralOctavius/LevelTestingProject) | 0 | Testing Unity Level tools and the LWRP | 2020-01-15 |
+| [d1xt1r/create-with-code](https://github.com/d1xt1r/create-with-code) | 0 | https://learn.unity.com/course/create-with-code | 2020-02-09 |
+| [Anthogonyst/Dragon-Invader](https://github.com/Anthogonyst/Dragon-Invader) | 0 | An Unity project developed for multi-state AI | 2020-01-15 |
+| [johans2/BurstTest](https://github.com/johans2/BurstTest) | 0 | A testproject for the Unity burst compiler and job system.  | 2020-01-17 |
+| [MeBuDA/VRMSelfieApp](https://github.com/MeBuDA/VRMSelfieApp) | 0 | ARKitとUnityでVRMの自撮りアプリ | 2021-03-02 |
+| [sourabhagarwal07/FPS-Game-Development](https://github.com/sourabhagarwal07/FPS-Game-Development) | 0 | Testing the unity environment and developing FPS based shooter game. | 2020-01-16 |
+| [akulmehra/Mario-Clone](https://github.com/akulmehra/Mario-Clone) | 0 | Mario-Clone made on Unity using C# for Dubstech UW | 2020-01-15 |
+| [Graunarmin/LostStation](https://github.com/Graunarmin/LostStation) | 0 | A Game-Project for the 8-Bit of Bauhaus Project  | 2021-08-10 |
+| [BRomans/EIT_AR_Notes](https://github.com/BRomans/EIT_AR_Notes) | 0 | Interactive tasks on a physical board powered by Augmented Reality, using Vuforia and Unity | 2022-01-24 |
+| [MatissesProjects/BlockDodger](https://github.com/MatissesProjects/BlockDodger) | 0 | First full Unity game. Goal is to play with a lot of different components | 2020-01-16 |
+| [JIARC777/CubeThon-CS455-Production](https://github.com/JIARC777/CubeThon-CS455-Production) | 0 | Cubethon is a simple unity runner tutorial from Brackeys: https://www.youtube.com/watch?v=IlKaB1etri... | 2020-04-25 |
+| [sheaduarte/ARTproject](https://github.com/sheaduarte/ARTproject) | 0 | This 2D game was created in Unity for a research project requiring leftward and rightward moving sti... | 2020-03-09 |
+| [JoaoGuimaraes22/AR-FieldService](https://github.com/JoaoGuimaraes22/AR-FieldService) | 0 | An AR Application for integrating with dynamics 365 CRM Field Service with object detection, using A... | 2020-01-25 |
+| [YashDahat/Micro-FPS](https://github.com/YashDahat/Micro-FPS) | 0 | this is a micro FPS game which was is available on unity , and i have done some minor changes in thi... | 2020-01-15 |
+| [1070470144/MFramework](https://github.com/1070470144/MFramework) | 0 | 个人收集的各种Unity源码，学习视频，游戏框架等功能，持续更新。 | 2023-03-27 |
+| [thonsesujit/tabgible_test](https://github.com/thonsesujit/tabgible_test) | 0 | Tangible_test is a Unity3D project built to test some of the functionality for building a larger app... | 2020-01-15 |
+| [Ravik27280/Game_-UI-Unity3D-](https://github.com/Ravik27280/Game_-UI-Unity3D-) | 0 | Here I make a UI for any game. The sample please visit to this link = https://www.youtube.com/watch?... | 2020-01-16 |
+| [coderKillo/unity](https://github.com/coderKillo/unity) | 0 | place to lay out all my unity resources | 2020-01-16 |
+| [arthur-fox/UnityBasics](https://github.com/arthur-fox/UnityBasics) | 0 | Unity Basic Demo - STT | 2020-03-22 |
+| [PiquiJL01/UnityProgram3](https://github.com/PiquiJL01/UnityProgram3) | 0 | Proyecto Final de Program 3 | 2020-01-16 |
+| [xiaoxiaowesley/UnityNativePluginsExample](https://github.com/xiaoxiaowesley/UnityNativePluginsExample) | 0 | Unity Native Plug-in Example. | 2020-02-01 |
+| [Mrpye/unity_number_wizrad_ui](https://github.com/Mrpye/unity_number_wizrad_ui) | 0 | Unity Game Wizard | 2020-01-16 |
+| [CouetteAllan/GitHubUnity](https://github.com/CouetteAllan/GitHubUnity) | 0 | Unity test GitHub | 2020-01-16 |
+| [Effigiavulpes/gamedev](https://github.com/Effigiavulpes/gamedev) | 0 | My Unity project | 2020-01-16 |
+| [Balaji693/unity-animation-movement](https://github.com/Balaji693/unity-animation-movement) | 0 | unity animation movement | 2020-01-16 |
+| [youga114/Unity_RPG](https://github.com/youga114/Unity_RPG) | 0 | 유니티 RPG 개인 프로젝트 | 2020-01-20 |
+| [ChristianBizu/MetroidUnity](https://github.com/ChristianBizu/MetroidUnity) | 0 | Game based of Metroid using Unity | 2020-01-16 |
+| [daniel-keogh/unity-labs](https://github.com/daniel-keogh/unity-labs) | 0 | Y3S2 Mobile Applications Development Unity Labs | 2021-07-04 |
+| [Catharz/Fireball-Unity](https://github.com/Catharz/Fireball-Unity) | 0 | Unity version of fireball. | 2020-01-16 |
+| [FlorianErwerth/AlgorithmUnity](https://github.com/FlorianErwerth/AlgorithmUnity) | 0 | A visualisation of the hunt and kill algorithm in unity | 2020-01-16 |
+| [Silwer0k/Unity-Platformer](https://github.com/Silwer0k/Unity-Platformer) | 0 | Пробуем с Илюшей создать платформер на Unity. | 2020-03-04 |
+| [claudiantoun/PacManUnity](https://github.com/claudiantoun/PacManUnity) | 0 | PacMan game made with Unity Engine. | 2020-01-16 |
+| [JackRoxton/GitHubUnity](https://github.com/JackRoxton/GitHubUnity) | 0 | oui | 2020-01-16 |
+| [Mrpye/unity_lazer_defender](https://github.com/Mrpye/unity_lazer_defender) | 0 | Laser Defender Game | 2020-09-15 |
+| [Mrpye/unity_block_breaker](https://github.com/Mrpye/unity_block_breaker) | 0 | Block Breaker Game  | 2020-01-16 |
+| [SunnyMaugin/MyUnityProjects](https://github.com/SunnyMaugin/MyUnityProjects) | 0 | My Games made in Unity and written in C# | 2020-01-16 |
+| [jsevamo/SimpleExplosion-Unity](https://github.com/jsevamo/SimpleExplosion-Unity) | 0 | C# Simple Explosion Gameplay | 2020-01-16 |
+| [JCharlieDev/Unity-Artificial-Intelligence](https://github.com/JCharlieDev/Unity-Artificial-Intelligence) | 0 | Artificial Intelligence examples and progress. | 2020-01-27 |
+| [time-machine/AdvancedUnityUI](https://github.com/time-machine/AdvancedUnityUI) | 0 | https://www.lynda.com/Unity-tutorials/Unity-5-2D-Advanced-UI/444940-2.html | 2020-03-01 |
+| [gorod-old/unity-uwp-ads](https://github.com/gorod-old/unity-uwp-ads) | 0 | Небольшой проект на примере которого рассматривается работа и интеграция рекламы от Microsoft в Unit... | 2020-01-16 |
+| [coderDarren/unity-game-essentials](https://github.com/coderDarren/unity-game-essentials) | 0 | A host project for Unity Core | 2020-02-04 |
+| [KenSchae/unity-simple-firstpersoncontroller](https://github.com/KenSchae/unity-simple-firstpersoncontroller) | 0 | A simple first person controller based on the Brackeys video. Adding in some concepts from the Unite... | 2020-01-17 |
+| [TheKankan/GitHubUnity-1](https://github.com/TheKankan/GitHubUnity-1) | 0 | Mon premier propro ^^ | 2024-01-13 |
+| [MysticQuest/Unity-UNET_Tank_Arena](https://github.com/MysticQuest/Unity-UNET_Tank_Arena) | 0 | A multiplayer tank arena for 2-4 players. Made with Unity and Unet | 2020-06-03 |
+| [VorapratR/ARArrow](https://github.com/VorapratR/ARArrow) | 0 | create AR app in Unity  | 2020-01-16 |
+| [SkyLaugh987/GitHubunity](https://github.com/SkyLaugh987/GitHubunity) | 0 | premier projet unity avec github | 2020-01-16 |
+| [WileyCorning/RealityHack2020-IntroUnity](https://github.com/WileyCorning/RealityHack2020-IntroUnity) | 0 | Tiny prototype from Intro to Unity workshop | 2020-01-16 |
+| [zitan10/Unity---Basic-Zombie-Mob-Game](https://github.com/zitan10/Unity---Basic-Zombie-Mob-Game) | 0 | Internet died, so I made this game out of boredom while waiting for the internet to get back up | 2025-10-08 |
+| [rynduse/Fluppy-Bird](https://github.com/rynduse/Fluppy-Bird) | 0 | Unity - Flappy Bird Clone for android os | 2020-01-16 |
+| [zainaraza43/pokemon-firered](https://github.com/zainaraza43/pokemon-firered) | 0 | Recreation of Pokemon Fire Red with Unity | 2025-08-10 |
+| [richardlin7/A-Trip-Through-Time](https://github.com/richardlin7/A-Trip-Through-Time) | 0 | A flash game made on the Unity3D engine that is inspired by the classic board game "Life." | 2020-01-18 |
+| [twambolt/bugmageddon](https://github.com/twambolt/bugmageddon) | 0 | Personal project for my CSC 371 class using Unity | 2020-01-21 |
+| [GameJams-butnamealreadytaken/GGJ2020-JambonBoursin](https://github.com/GameJams-butnamealreadytaken/GGJ2020-JambonBoursin) | 0 | New start. | 2023-01-28 |
+| [twood27897/customtextmeshpro](https://github.com/twood27897/customtextmeshpro) | 0 | My custom additions to the TextMesh Pro package for Unity | 2024-05-07 |
+| [manzinge/Farben-und-Formen](https://github.com/manzinge/Farben-und-Formen) | 0 | Small Unity Project with Leap Motion Sensor for my University | 2023-01-28 |
+| [nadarevd/The-Wizards-Hat](https://github.com/nadarevd/The-Wizards-Hat) | 0 | A silly unity game created by a group of friends. | 2020-01-16 |
+| [Yunkai-Xiao/Tower-Defence](https://github.com/Yunkai-Xiao/Tower-Defence) | 0 | A Tower Defence Game that written in C# using Unity Engine | 2020-01-16 |
+| [Dipak1993/Egg-In-SHell](https://github.com/Dipak1993/Egg-In-SHell) | 0 | This is one of my game called Egg in Shell using C# in unity. | 2020-01-16 |
+| [YunhanMao/Crazy-racing-game-](https://github.com/YunhanMao/Crazy-racing-game-) | 0 | A game made by Gary with Unity 3D as a final project at GEC camp | 2020-01-16 |
+| [starstruuk/firstlevel](https://github.com/starstruuk/firstlevel) | 0 | Was the first level I made on Unity 3D. Nothing much, simple walking simulator. Everything except ha... | 2020-01-16 |
+| [pusacaspica/Lab3D-PreCovid](https://github.com/pusacaspica/Lab3D-PreCovid) | 0 | Unfinished Unity 2019.3.0b6 AR project about creating molecules from markers and making and interact... | 2020-09-09 |
+| [CodySelman/Petting](https://github.com/CodySelman/Petting) | 0 | Surreal Game made in Unity3D | 2020-09-29 |
+| [Ninjars/Vectrosity-Experiments](https://github.com/Ninjars/Vectrosity-Experiments) | 0 | Learning how to build ui elements with the Vectrosity Unity library. | 2020-01-17 |
+| [danilsdoes/UnityBaseProject](https://github.com/danilsdoes/UnityBaseProject) | 0 | A base for all of my future unity 2d tile based projects | 2020-01-17 |
+| [jurnasp/dodge](https://github.com/jurnasp/dodge) | 0 | Unity project | 2024-02-28 |
+| [DA-NDI/d03_unity](https://github.com/DA-NDI/d03_unity) | 0 | d03_unity | 2020-01-17 |
+| [MaxenceBerger/Roll-a-Ball](https://github.com/MaxenceBerger/Roll-a-Ball) | 0 | Unity Projet | 2020-01-17 |
+| [donsvederus/RPGproject](https://github.com/donsvederus/RPGproject) | 0 | Unity RPG Tutorial | 2020-11-26 |
+| [lh784116211/unity_firework](https://github.com/lh784116211/unity_firework) | 0 | 爬山，山顶放烟花 | 2020-01-17 |
+| [EvgenyShivelev/Unity-Scripts](https://github.com/EvgenyShivelev/Unity-Scripts) | 0 | Скрипты выполненные на фрилансе (Геймдев) | 2020-01-17 |
+| [Joenhle/Unity_STG](https://github.com/Joenhle/Unity_STG) | 0 | 大二计算机图形做的一个项目，用的unity写的一个很简单的射击游戏。 | 2020-01-17 |
+| [MaksenProjects/Unity-adventures](https://github.com/MaksenProjects/Unity-adventures) | 0 | Here i store everything what has to do with Unity | 2020-02-07 |
+| [AjayBS/Unity-MLAgents](https://github.com/AjayBS/Unity-MLAgents) | 0 | ML agents project in unity. Version used for mlagents is 0.11.0 | 2020-01-29 |
+| [JZ-wenxuan/unity-metroid](https://github.com/JZ-wenxuan/unity-metroid) | 0 | Impletation of Metroid in Unity | 2020-05-24 |
+| [dymasainun/Unity-Tugas](https://github.com/dymasainun/Unity-Tugas) | 0 | menampilkan Objek AR dan Video dengan main menu menggunakan Unity 2018.4.6f1 | 2020-01-24 |
+| [lh784116211/unity_takephoto](https://github.com/lh784116211/unity_takephoto) | 0 | unity环绕球面拍照记录相机位姿 | 2020-01-17 |
+| [sdsmnc221/ggmaps_unity_demo](https://github.com/sdsmnc221/ggmaps_unity_demo) | 0 | Test Google Maps Unity SDK | 2020-01-17 |
+| [deyan-yosifov/xaml-to-unity](https://github.com/deyan-yosifov/xaml-to-unity) | 0 | Sample desktop XAML app with WPF 3D functionality and a corresponding version ported for Unity. Thes... | 2020-02-11 |
+| [AshmitaRoy/Unity-Mini-Games](https://github.com/AshmitaRoy/Unity-Mini-Games) | 0 | Mini games made using the Unity Game engine | 2020-01-17 |
+| [Wolfleader101/ExoBoost](https://github.com/Wolfleader101/ExoBoost) | 0 | simple unity 3d game | 2020-01-30 |
+| [javalisson/My-Unity-Playground-Games](https://github.com/javalisson/My-Unity-Playground-Games) | 0 | Playing with Unity Playground | 2020-01-19 |
+| [rynduse/Multiplayer_Fps_Game](https://github.com/rynduse/Multiplayer_Fps_Game) | 0 | Unity - Multiplayer Fps Game | 2020-01-17 |
+| [khistory-study/Unity-Tutorial-StudyProjects](https://github.com/khistory-study/Unity-Tutorial-StudyProjects) | 0 | 유니티 튜토리얼 스터디 프로젝트 결과물을 업로드합니다 | 2024-07-05 |
+| [AshirAli/ARFoundation](https://github.com/AshirAli/ARFoundation) | 0 | Unity-ARFoundation basics and test | 2020-11-10 |
+| [PatrikMaki/simplegame](https://github.com/PatrikMaki/simplegame) | 0 | A simple 2D Unity game | 2020-01-17 |
+| [Darina1801/Create_with_Code_Unity_Learn](https://github.com/Darina1801/Create_with_Code_Unity_Learn) | 0 | My solutions for the course Cleate with Code fom Unity Learn platform  | 2020-01-17 |
+| [KunaalKumar/2DGame](https://github.com/KunaalKumar/2DGame) | 0 | My first 2D Game using Unity | 2020-01-18 |
+| [InRaiDi/IntroGameSimulation](https://github.com/InRaiDi/IntroGameSimulation) | 0 | Unity 2D Space Game: Spaceship shooter | 2020-06-16 |
+| [zachlloyd01/NaturalSelection](https://github.com/zachlloyd01/NaturalSelection) | 0 | Natural Selection Simulator Built in Unity | 2020-01-28 |
+| [EmptyCollin/Tonkin_chess](https://github.com/EmptyCollin/Tonkin_chess) | 0 | Tonkin chess created by Unity 3D | 2020-02-07 |
+| [juliag129/myFireGame](https://github.com/juliag129/myFireGame) | 0 | Final project for Game Design, a fire themed game made using Unity. | 2022-06-09 |
+| [Darina1801/More_C-Sharp_Programming_and_Unity](https://github.com/Darina1801/More_C-Sharp_Programming_and_Unity) | 0 | My solutions for Coursera course More C# Programming and Unity | 2020-02-23 |
+| [AshmitaRoy/Hacked_Game](https://github.com/AshmitaRoy/Hacked_Game) | 0 | FPS Maze Game using Unity Game Engine | 2020-05-30 |
+| [Darina1801/Intermediate_Object-Oriented_Programming_for_Unity_Games](https://github.com/Darina1801/Intermediate_Object-Oriented_Programming_for_Unity_Games) | 0 | My solutions for Coursera course Intermediate Object-Oriented Programming for Unity Games | 2020-01-23 |
+| [Darina1801/Introduction_to_C-Sharp_Programming_and_Unity](https://github.com/Darina1801/Introduction_to_C-Sharp_Programming_and_Unity) | 0 | My solutions for Coursera course Introduction to C# Programming and Unity | 2020-02-22 |
+| [KevinJi98/FullProject3-Chatbot](https://github.com/KevinJi98/FullProject3-Chatbot) | 0 | Documentation about our chatbot using IBM & Unity | 2020-01-23 |
+| [JustinStephenson/Crop_Shop](https://github.com/JustinStephenson/Crop_Shop) | 0 | Unity game that I created using C# | 2020-01-23 |
+| [Tanttinator/RTSCamera](https://github.com/Tanttinator/RTSCamera) | 0 | RTS style camera controller asset for Unity | 2020-08-23 |
+| [javalisson/my-own-ufo-game](https://github.com/javalisson/my-own-ufo-game) | 0 | A simple game based on a Unity tutorial | 2020-01-17 |
+| [escoladojogo/side-scroller-2](https://github.com/escoladojogo/side-scroller-2) | 0 | Projeto da aula: Introdução ao Editor da Unity | 2020-02-13 |
+| [JustinStephenson/Aerial_Invasion](https://github.com/JustinStephenson/Aerial_Invasion) | 0 | Unity game that I created independently using C# | 2020-01-23 |
+| [JustinStephenson/Prime_Defence](https://github.com/JustinStephenson/Prime_Defence) | 0 | Unity game that I created independently using C# | 2020-01-23 |
+| [matthewspahl/Super_Arctic_Meltdown](https://github.com/matthewspahl/Super_Arctic_Meltdown) | 0 | Demo of a 2D action platformer game, made with Unity. | 2022-09-08 |
+| [KingSlayer06/Flying-Dragon](https://github.com/KingSlayer06/Flying-Dragon) | 0 | Unity 3D projects. Game Stream is available on my youtube channel. | 2022-04-10 |
+| [LenweSeregon/Myrmidon](https://github.com/LenweSeregon/Myrmidon) | 0 | Myrmidon is a Unity's project to facilitate futur game development | 2020-02-16 |
+| [ZianeA/Boxy-Crossy-Road](https://github.com/ZianeA/Boxy-Crossy-Road) | 0 | A clone of the popular Crossy Road game using Unity and C#. | 2020-10-29 |
+| [Nananoizy/Thalasso](https://github.com/Nananoizy/Thalasso) | 0 | 3D Rails Shooter created for the Unity 3D course from GameDev.tv | 2020-01-29 |
+| [valerija-h/ICS3209-Assignment](https://github.com/valerija-h/ICS3209-Assignment) | 0 | Assignment for Advanced Game AI (University of Malta) 2019/20 - Building a 2D runner game and using ... | 2021-06-14 |
+| [Ai00000/networkGameDemo](https://github.com/Ai00000/networkGameDemo) | 0 | 使用unity开发的网络对战游戏demo | 2020-01-20 |
+| [Zidane609/test_game](https://github.com/Zidane609/test_game) | 0 | My first unity game. I dont give a shit how does it look like.  | 2020-01-17 |
+| [BaptisteRoseau/GameJam2020v2](https://github.com/BaptisteRoseau/GameJam2020v2) | 0 | Unity 2D shooter game made during ENSEIRB-MATMECA and MMI's Game Jam 2020 | 2020-10-03 |
+| [SirGoody/MyShop](https://github.com/SirGoody/MyShop) | 0 | eCommerce Shop to practice C#, MVC, LINQ, SOLID Principles, ASP.NET, .NET Framework, ENTITY, Unity, ... | 2020-01-17 |
+| [siralpega/fourinaline](https://github.com/siralpega/fourinaline) | 0 | Connect four chips in a line (vertical, horizontal, or diagonal) in turns vs an opponent over the in... | 2020-01-17 |
+| [jeffmur/Checkers-Multiplayer](https://github.com/jeffmur/Checkers-Multiplayer) | 0 | Multiplayer American Style Checkers | 2021-02-18 |
+| [MitchellSturba/Rock-Paper-Scissors-Unity-Game](https://github.com/MitchellSturba/Rock-Paper-Scissors-Unity-Game) | 0 | Rock! Paper! Scissors! Developed with C# and Unity, this project puts a creative twist on the classi... | 2025-02-06 |
+| [Kens3i/Unity](https://github.com/Kens3i/Unity) | 0 | Some Basic Games I Made Wth Unity | 2020-01-18 |
+| [tsukushibito/UnityTDD](https://github.com/tsukushibito/UnityTDD) | 0 | TDD with Unity | 2020-02-07 |
+| [AlexClazrey/UnityVEMotor](https://github.com/AlexClazrey/UnityVEMotor) | 0 | Unity Project Part of STM32VEMotor, provides an Unity interface to UART commands of chip. | 2020-01-18 |
+| [mdanielskeys/UnitySpaceInvader](https://github.com/mdanielskeys/UnitySpaceInvader) | 0 | First Unity game a space invaders clone with personal sound track | 2021-05-05 |
+| [MontyZZZ/52Hz0003](https://github.com/MontyZZZ/52Hz0003) | 0 | unity demo | 2020-01-18 |
+| [Ando-O7/chick_attack](https://github.com/Ando-O7/chick_attack) | 0 | practice Unity | 2020-01-26 |
+| [UDEMY-UNITY-AJ/UNITY-2D](https://github.com/UDEMY-UNITY-AJ/UNITY-2D) | 0 | Unity Games developed following the Udemy Unity Tutorial | 2020-02-07 |
+| [RocioJamanca/SCIOTRA_Project](https://github.com/RocioJamanca/SCIOTRA_Project) | 0 | Proyecto de SCIOTRA. Proyecto para la asignatura de Smart Cities, IoT y Realidad Aumentada. Proyecto... | 2022-08-17 |
+| [ivankozlovcodes/tf-unity](https://github.com/ivankozlovcodes/tf-unity) | 0 | Custom tf-agents wrapper for unity environments. | 2020-02-07 |
+| [Ducklett/unity-devconsole](https://github.com/Ducklett/unity-devconsole) | 0 | runtime developer console with IntelliSense | 2021-01-08 |
+| [EvanJJones/GameTest](https://github.com/EvanJJones/GameTest) | 0 | Testing unity github integratio | 2020-01-18 |
+| [gorod-old/unity-github-lesson](https://github.com/gorod-old/unity-github-lesson) | 0 | Work with GitHub in Unity projects/Работа с GitHub в Unity проектах (lesson project). | 2020-01-18 |
+| [Raikusen/Loop-Energy](https://github.com/Raikusen/Loop-Energy) | 0 | Web Avenue Unity exercice | 2020-01-25 |
+| [strikejsj/Unity_SimpleScene](https://github.com/strikejsj/Unity_SimpleScene) | 0 | Making simple shooting game with Unity | 2020-01-22 |
+| [Egiboi/Unity-car-game](https://github.com/Egiboi/Unity-car-game) | 0 | 1st year school project creating Unity game ©Daniel Eggleton, Kim Widberg,  Annika Jõever | 2020-01-18 |
+| [MingHub0313/SpringBootUnity](https://github.com/MingHub0313/SpringBootUnity) | 0 | rabbitmq、redis、scheduled、socket、mongodb、Swagger2、spring data jpa、Thymeleaf、freemarker etc. (muti mod... | 2020-01-20 |
+| [karthikappy/unity-music-visualizer](https://github.com/karthikappy/unity-music-visualizer) | 0 | My attempt at creating a music visualizer in Unity | 2020-01-18 |
+| [r-koubou/unity-simple-logger](https://github.com/r-koubou/unity-simple-logger) | 0 | Lightweight logger module | 2020-01-20 |
+| [truong-ph/Gambit](https://github.com/truong-ph/Gambit) | 0 | Personal Unity FPS RPG | 2020-01-18 |
+| [jeanhadrien/ISEN-Unity-GalaxyLook](https://github.com/jeanhadrien/ISEN-Unity-GalaxyLook) | 0 | TP Unity Janvier 2020 | 2022-05-03 |
+| [LordLackusX/Unity-2D-Platformer](https://github.com/LordLackusX/Unity-2D-Platformer) | 0 | simple 2d platformer isnpired by flappy bird  | 2020-01-18 |
+| [InFaNsO/Class_Unity_RollABall](https://github.com/InFaNsO/Class_Unity_RollABall) | 0 | first project for unity practice | 2020-01-25 |
+| [tan840/Machine-Learning-with-Unity](https://github.com/tan840/Machine-Learning-with-Unity) | 0 | Machine Learning Basics | 2020-01-18 |
+| [Experimental-forks/SnakeGame](https://github.com/Experimental-forks/SnakeGame) | 0 | Unity snake game from tutorial | 2022-10-30 |
+| [ECHOPAIN/platformer-shooter-game](https://github.com/ECHOPAIN/platformer-shooter-game) | 0 | Game developpement test using unity | 2020-03-01 |
+| [bilasyurii/foxie_game](https://github.com/bilasyurii/foxie_game) | 0 | A small Unity project which I made to learn game development process in Unity | 2020-08-22 |
+| [darkluminance/Sorting-visualizer](https://github.com/darkluminance/Sorting-visualizer) | 0 | A program that visualizes 6 sorting algorithms using bars. Used unity3D for the project | 2020-01-18 |
+| [rayaldeo/TicTacToe-Unity-Game](https://github.com/rayaldeo/TicTacToe-Unity-Game) | 0 | This is a  3D TicTacToe developed in Unity. | 2020-03-01 |
+| [LordLackusX/Unity-AR-WorldBuilder-Android](https://github.com/LordLackusX/Unity-AR-WorldBuilder-Android) | 0 | Augmented reality apps created in Unity, file Contains apk files of multiple versions of the project... | 2025-02-21 |
+| [Tougon/MultiplayerUIComponents](https://github.com/Tougon/MultiplayerUIComponents) | 0 | Unity UI Components for Multiplayer games. | 2020-01-18 |
+| [RErwandi/SimpleUI](https://github.com/RErwandi/SimpleUI) | 0 | A simple ui management for Unity | 2020-01-18 |
+| [GameLokal/SimpleUI](https://github.com/GameLokal/SimpleUI) | 0 | A Simple UI Management for Unity | 2020-01-18 |
+| [jkmolina/u3d-laboratory1](https://github.com/jkmolina/u3d-laboratory1) | 0 | first unity project, basic features implemented | 2020-01-18 |
+| [simoncrowe/SWITCH](https://github.com/simoncrowe/SWITCH) | 0 | Unity3D Interactive Fiction started in 2012. Varying code quality due to initial inexperience and in... | 2020-03-15 |
+| [galdrmann/projectblack](https://github.com/galdrmann/projectblack) | 0 | Unity dev for Solar Settlers: Project Black | 2020-01-18 |
+| [AlecLi1985/SimpleSpaceShooter](https://github.com/AlecLi1985/SimpleSpaceShooter) | 0 | A Simple Space Shooter game made in Unity | 2020-03-15 |
+| [playfulsystems/MultiMouseLineDrawingTemplate](https://github.com/playfulsystems/MultiMouseLineDrawingTemplate) | 0 | Simpy Unity project that allows for multiple mouse drawing | 2020-01-18 |
+| [SurfingNerd/SpelkollektivetPlayground](https://github.com/SurfingNerd/SpelkollektivetPlayground) | 0 | Just a playground for Unity for Lessons in the Spelkollektivet | 2020-01-18 |
+| [theodor349/Conways-Game-of-Life](https://github.com/theodor349/Conways-Game-of-Life) | 0 | A Unity DOTS implementation of Conway's Game of Life | 2020-01-30 |
+| [KumoCuSO4/Tetris](https://github.com/KumoCuSO4/Tetris) | 0 | A simple Tetris game made by KumoCuSO4. Game engine: Unity | 2020-01-19 |
+| [dwbell1991/Yoshi_64](https://github.com/dwbell1991/Yoshi_64) | 0 | A game made with Unity, cloning Mario64 with a custom art work. | 2020-01-18 |
+| [kawabart/ColdWar](https://github.com/kawabart/ColdWar) | 0 | GameJamPJATK2020 | 2025-02-09 |
+| [AndrewBrenev/SpaceBattle](https://github.com/AndrewBrenev/SpaceBattle) | 0 | 🎮🚀 ☄️🪐 My first 2D space battle game written on Unity. | 2020-01-28 |
+| [Mamoon212/Balloon_Beach](https://github.com/Mamoon212/Balloon_Beach) | 0 | First try with Unity Engine, simple runner style game with procedural infinite level generation. | 2020-01-18 |
+| [mickplouffe/GDHQ_Course-1B](https://github.com/mickplouffe/GDHQ_Course-1B) | 0 | It is the repo for the GameDevHQ Course 1B 2.5D Platformer in Unity. | 2024-07-22 |
+| [TheIndieAccord/AutomatedSteamDeploy](https://github.com/TheIndieAccord/AutomatedSteamDeploy) | 0 | Deploy applications from Unity Cloud Build to a given branch on Steam using Jenkins | 2020-04-17 |
+| [MexicanMan/TopDownDemo](https://github.com/MexicanMan/TopDownDemo) | 0 | Small top-down shooter gallery | 2020-09-14 |
+| [saroooo/AR_Bio](https://github.com/saroooo/AR_Bio) | 0 | An android AR app for children to teach them about diversity in living things. Using Unity, Visual S... | 2020-01-18 |
+| [saroooo/V_Dentist](https://github.com/saroooo/V_Dentist) | 0 | It was my graduation project, the project was AR, VR Android app that helps dentistry's students to ... | 2020-01-18 |
+| [TroydonAnabolic/SpaceInavdersTutorial](https://github.com/TroydonAnabolic/SpaceInavdersTutorial) | 0 | To view coding: SpaceInvaders -> Assets-> Scripts. download game for playing: SpaceInvaders-> Builds... | 2020-01-19 |
+| [BharatShukla30/Games-with-unity](https://github.com/BharatShukla30/Games-with-unity) | 0 | Games that I created with unity3d | 2020-01-19 |
+| [oouo-diogo-perdigao/contador-de-turnos-unity](https://github.com/oouo-diogo-perdigao/contador-de-turnos-unity) | 0 | Simples contador de turnos para RPG ou semelhantes para até 9 jogadores | 2023-01-28 |
+| [devmcclu/c351-final](https://github.com/devmcclu/c351-final) | 0 | Minimax with alpha beta demo in Unity | 2020-01-19 |
+| [ammupaty/unity](https://github.com/ammupaty/unity) | 0 | games | 2020-01-19 |
+| [AlexLin1234/Unity](https://github.com/AlexLin1234/Unity) | 0 | Unity games and project I've made over the years | 2020-01-19 |
+| [jsjxsy/wushi](https://github.com/jsjxsy/wushi) | 0 | unity3D游戏开发 | 2020-01-19 |
+| [suivalf/White-Snow](https://github.com/suivalf/White-Snow) | 0 | :video_game: Unity3D Game(ish) | 2023-01-12 |
+| [pturo/NetGame](https://github.com/pturo/NetGame) | 0 | Multiplayer game made with Unity3D | 2022-06-04 |
+| [devmcclu/monty-prototpye-3d](https://github.com/devmcclu/monty-prototpye-3d) | 0 | Prototype of cancled game Monty | 2020-04-28 |
+| [thomaspatrick/StateFlux](https://github.com/thomaspatrick/StateFlux) | 0 | Json/Websockets Multiplayer for Unity3d | 2021-02-21 |
+| [krasi070/UnitySnake](https://github.com/krasi070/UnitySnake) | 0 | A snake game made in Unity as a quick exercise. | 2020-10-14 |
+| [pyzxxx/UnityStudy](https://github.com/pyzxxx/UnityStudy) | 0 | UnityStudy | 2020-02-17 |
+| [MatheusMAssis/Recreating-GTA-Transition](https://github.com/MatheusMAssis/Recreating-GTA-Transition) | 0 | (Unity3D) Recreating transition scene between characters of GTA V | 2020-01-19 |
+| [Moshe-Paz/Crossy-Road](https://github.com/Moshe-Paz/Crossy-Road) | 0 | Unity Game | 2020-01-20 |
+| [devmcclu/monty-prototype-2d](https://github.com/devmcclu/monty-prototype-2d) | 0 | Prototype of cancled game The Epic of Monty | 2020-01-19 |
+| [Hekiat/Sail](https://github.com/Hekiat/Sail) | 0 | Unity Prototype | 2022-07-24 |
+| [jouse/Test3D](https://github.com/jouse/Test3D) | 0 | Unity Test3D | 2020-01-19 |
+| [2jyong/Balls-Adventure](https://github.com/2jyong/Balls-Adventure) | 0 | Unity tutorial | 2020-02-26 |
+| [manabe5260/unity_game_manabe](https://github.com/manabe5260/unity_game_manabe) | 0 | B4 homework unity | 2020-02-09 |
+| [quachi4ever/fpsshooterunity](https://github.com/quachi4ever/fpsshooterunity) | 0 | union of unity | 2020-01-19 |
+| [Nafis360/Hello-World-Repository-NafisTaylor](https://github.com/Nafis360/Hello-World-Repository-NafisTaylor) | 0 | DIG3480 - Unity Tutorials | 2020-04-20 |
+| [Phenik890/HelloWorld](https://github.com/Phenik890/HelloWorld) | 0 | Unity Tutorial Project | 2020-01-19 |
+| [anymegarobo/Unity-games](https://github.com/anymegarobo/Unity-games) | 0 | i started making games in unity so ..... | 2020-01-19 |
+| [AlexLin1234/Unity-Projects](https://github.com/AlexLin1234/Unity-Projects) | 0 | Projects created on Unity | 2020-01-19 |
+| [andrewMazurkevich/unity-ar](https://github.com/andrewMazurkevich/unity-ar) | 0 | trump on ace of spades | 2020-01-19 |
+| [DevLugo/Tetris-Unity](https://github.com/DevLugo/Tetris-Unity) | 0 | Simple Tetris Unity Game | 2020-05-14 |
+| [RL4RWS/docs-unity-tutorial](https://github.com/RL4RWS/docs-unity-tutorial) | 0 | 2020년 진행하는 Unity 및 강화학습 기초 문서 | 2020-01-19 |
+| [lovk4ch/leviathan-rising_-_unity](https://github.com/lovk4ch/leviathan-rising_-_unity) | 0 | A horror shooter mixing futuristic and Paleozoic worlds | 2021-04-14 |
+| [Pctg-x8/native-render-intercept-test](https://github.com/Pctg-x8/native-render-intercept-test) | 0 | Unity NativeRenderingPlugin Interception Test | 2023-01-28 |
+| [juleneetac/PiterArmstrongUnity](https://github.com/juleneetac/PiterArmstrongUnity) | 0 | Piter Armstrong juego unity | 2020-01-20 |
+| [iasb/Unity_LOG-_Parser](https://github.com/iasb/Unity_LOG-_Parser) | 0 | Parsing Unity LOG by sub-parts | 2020-01-19 |
+| [jehouha/HelloWorld](https://github.com/jehouha/HelloWorld) | 0 | Unity build and code | 2020-01-19 |
+| [PolarweaselL/NumberWizzard](https://github.com/PolarweaselL/NumberWizzard) | 0 | C# application with Unity  | 2020-01-19 |
+| [streetmeow/Space-Game](https://github.com/streetmeow/Space-Game) | 0 | Space game using unity | 2020-01-19 |
+| [LeoFeitosa/game2d-unity](https://github.com/LeoFeitosa/game2d-unity) | 0 | game | 2020-06-23 |
+| [sandaweesh/QuanTui](https://github.com/sandaweesh/QuanTui) | 0 | Quantum Computing TUI Unity Project | 2020-01-19 |
+| [Erzyl/LiquidUndex](https://github.com/Erzyl/LiquidUndex) | 0 | FPS game made in Unity | 2020-04-19 |
+| [hahughes/Flappy-Bird](https://github.com/hahughes/Flappy-Bird) | 0 | 2D Flappy Bird Unity Game | 2020-05-01 |
+| [TUTOUNITYFR/Road-Props-ProBuilder-Unity](https://github.com/TUTOUNITYFR/Road-Props-ProBuilder-Unity) | 0 | Props routier réalisés sur Unity avec ProBuilder. | 2020-01-24 |
