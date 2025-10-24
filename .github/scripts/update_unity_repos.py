@@ -11,7 +11,7 @@ LAST_RUN_FILE = ".github/data/last_run_time.txt"
 README_FILE = "README.md"
 
 QUERY = "unity OR unity3d"
-BATCH_DAYS = 7       # 每批抓取的天数
+BATCH_DAYS = 1       # 每批抓取的天数
 PER_PAGE = 100       # 每页抓取数量
 MAX_RESULTS = 1000   # 每次搜索最大结果数
 REQUEST_DELAY = 2    # 秒，避免触发 API rate limit
