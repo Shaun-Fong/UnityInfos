@@ -119,7 +119,7 @@ def update_readme(repos):
     - 截断 repo 名称和 description，超出部分以 "..." 表示
     - 在链接中使用 title 属性保存完整信息，鼠标悬停可查看（tooltip）
     """
-    NAME_DISPLAY_MAX = 36   # 仓库名称显示最大长度
+    NAME_DISPLAY_MAX = 20   # 仓库名称显示最大长度
     DESC_DISPLAY_MAX = 120  # 描述显示最大长度
 
     def clean_text(s: str) -> str:
