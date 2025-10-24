@@ -36,7 +36,7 @@ jobs:
       #    脚本里应读取环境变量 API_TOKEN（下面我们把 PAT_TOKEN 传给 API_TOKEN）
       - name: Run update script
         env:
-          API_TOKEN: ${{ secrets.PERSONAL_TOKEN }}   # 用于调用 GitHub API（脚本里读取 API_TOKEN）
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}   # 用于调用 GitHub API（脚本里读取 API_TOKEN）
         run: |
           python .github/scripts/update_unity_repos.py
 
