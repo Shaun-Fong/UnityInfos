@@ -16,7 +16,7 @@ QUERY = "unity OR unity3d"
 BATCH_DAYS = 1           # 每批抓取的天数
 PER_PAGE = 100           # 每页抓取数量
 MAX_RESULTS = 1000       # 每次搜索最大结果数（GitHub API 限制）
-TOTAL_FETCH_LIMIT = 1000 # 每次脚本执行抓取总数限制
+TOTAL_FETCH_LIMIT = 3000 # 每次脚本执行抓取总数限制
 REQUEST_DELAY = 2        # 秒，避免触发 API rate limit
 MAX_DESC_LENGTH = 100    # description 最大长度
 
