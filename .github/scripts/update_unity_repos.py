@@ -26,7 +26,7 @@ def load_last_run():
             return f.read().strip()
     else:
         # 初始抓取时间
-        return "2020-01-01"
+        return "2008-01-01T00:00:00Z"
 
 def save_last_run(ts):
     with open(LAST_RUN_FILE, "w") as f:
@@ -127,7 +127,14 @@ def update_readme(repos):
 # ================= 主逻辑 =================
 def main():
     last_run_str = load_last_run()
-    last_run_date = datetime.strptime(last_run_str, "%Y-%m-%d")
+    try:
+        # 支持 ISO8601 时间解析
+        last_run_date = datetime.strptime(last_run_str, "%Y-%m-%dT%H:%M:%SZ")
+    except ValueError:
+        # 兼容旧版 YYYY-MM-DD
+        last_run_date = datetime.strptime(last_run_str, "%Y-%m-%d")
+        last_run_str = last_run_date.strftime("%Y-%m-%dT%H:%M:%SZ")
+
     now = datetime.utcnow()
     existing = load_existing_repos()
 
@@ -139,11 +146,10 @@ def main():
         save_repos(existing)
         update_readme(existing)
 
-        # 更新 last_run_time 为 batch 结束日期
+        # 更新 last_run_time 为 batch 结束日期（ISO8601）
         last_run_date = batch_end
-        save_last_run(last_run_date.strftime("%Y-%m-%d"))
+        save_last_run(last_run_date.strftime("%Y-%m-%dT%H:%M:%SZ"))
 
-        # 为测试可以加 sleep
         time.sleep(REQUEST_DELAY)
 
 if __name__ == "__main__":
