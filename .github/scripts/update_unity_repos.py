@@ -136,10 +136,17 @@ def update_readme(repos, filepath=README_FILE):
         desc = r.get("description") or ""
         updated = r.get("pushed_at") or ""
         lines.append(f"| [{name}]({url}) | {stars} | {desc} | {updated} |")
-    os.makedirs(os.path.dirname(filepath), exist_ok=True)
+
+    # 根目录不需要创建目录
+    dirpath = os.path.dirname(filepath)
+    if dirpath:
+        os.makedirs(dirpath, exist_ok=True)
+
     with open(filepath, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
+
     print(f"README.md updated, total repos: {len(repo_list)}")
+
 
 # ===== 主流程 =====
 def main():
