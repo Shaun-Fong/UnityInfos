@@ -1,12 +1,6 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-"""
-update_unity_repos_full.py
-- 历史 + 增量抓取 Unity 仓库
-- 自动去重并生成 README
-"""
-
 import os
 import sys
 import time
@@ -21,18 +15,20 @@ if not API_TOKEN:
     sys.exit(2)
 
 SEARCH_URL = "https://api.github.com/search/repositories"
-QUERY = "unity"       # 关键词，尽量宽松
-PER_PAGE = 100        # 每页抓取数量，最大 100
-MAX_RESULTS = 100    # Search API 每次最多 1000 条
-DATA_FILE = "data/repos.json"
-LAST_RUN_FILE = "data/last_run_time.txt"
+QUERY = "unity"       # 关键词
+PER_PAGE = 100        # 每页数量
+MAX_RESULTS = 200    # 每次最多抓 1000 条
+DATA_FILE = "./github/data/repos.json"
+LAST_RUN_FILE = "./github/data/last_run_time.txt"
 README_FILE = "README.md"
+BATCH_DAYS = 1        # 每次抓取 1 天的数据，防止超出限制
+REQUEST_DELAY = 2      # 每次请求间隔秒数
 
 HEADERS = {
     "Accept": "application/vnd.github+json",
     "Authorization": f"Bearer {API_TOKEN}",
     "X-GitHub-Api-Version": "2022-11-28",
-    "User-Agent": "unity-repo-full-script"
+    "User-Agent": "unity-repo-batch-script"
 }
 
 # ===== 工具函数 =====
@@ -51,7 +47,7 @@ def get_last_run_time():
     if os.path.exists(LAST_RUN_FILE):
         with open(LAST_RUN_FILE, "r") as f:
             return f.read().strip()
-    # 默认历史抓取起点：Unity 初始年份
+    # 默认历史抓取起点
     return "2008-01-01T00:00:00Z"
 
 def set_last_run_time(ts):
@@ -60,12 +56,8 @@ def set_last_run_time(ts):
         f.write(ts)
 
 def github_search(query, time_field, start_time, end_time=None, per_page=100):
-    """
-    按时间段抓取仓库，返回列表
-    """
     repos = []
     page = 1
-    # 构造时间段
     if end_time:
         time_range = f"{start_time}..{end_time}"
         q = f"{query}+{time_field}:{time_range}"
@@ -92,7 +84,7 @@ def github_search(query, time_field, start_time, end_time=None, per_page=100):
         if len(items) < per_page or len(repos) >= MAX_RESULTS:
             break
         page += 1
-        time.sleep(1)  # 避免触发 rate limit
+        time.sleep(REQUEST_DELAY)
     return repos[:MAX_RESULTS]
 
 def merge_repos(existing, new_repos):
@@ -107,7 +99,6 @@ def merge_repos(existing, new_repos):
             merged[key] = r
             added += 1
         else:
-            # 更新逻辑：按 pushed_at 更新
             old_ts = merged[key].get("pushed_at")
             new_ts = r.get("pushed_at")
             if new_ts and old_ts and new_ts > old_ts:
@@ -116,18 +107,14 @@ def merge_repos(existing, new_repos):
     return merged, added, updated
 
 def update_readme(repos, filepath=README_FILE):
-    """
-    生成简单 Markdown README
-    """
     lines = [
-        "# Unity3D Repositories Collection\n",
-        "> 自动生成的 Unity 仓库列表\n",
-        f"> Last updated: {datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}\n",
-        "---\n",
+        "# Unity3D Repositories Collection",
+        "> 自动生成的 Unity 仓库列表",
+        f"> Last updated: {datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}",
+        "---",
         "| Name | Stars | Description | Updated |",
         "| ---- | ----- | ----------- | ------- |"
     ]
-    # 按 stars 排序
     repo_list = sorted(repos.values(), key=lambda r: r.get("stargazers_count", 0), reverse=True)
     for r in repo_list:
         name = r.get("full_name")
@@ -137,16 +124,14 @@ def update_readme(repos, filepath=README_FILE):
         updated = r.get("pushed_at") or ""
         lines.append(f"| [{name}]({url}) | {stars} | {desc} | {updated} |")
 
-    # 根目录不需要创建目录
+    # 根目录 README，不需要创建目录
     dirpath = os.path.dirname(filepath)
     if dirpath:
         os.makedirs(dirpath, exist_ok=True)
 
     with open(filepath, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
-
     print(f"README.md updated, total repos: {len(repo_list)}")
-
 
 # ===== 主流程 =====
 def main():
@@ -154,32 +139,27 @@ def main():
     last_run_time = get_last_run_time()
     print(f"Last run time: {last_run_time}")
 
-    # 历史抓取模式：按天分段抓取
     start_dt = datetime.strptime(last_run_time, "%Y-%m-%dT%H:%M:%SZ")
-    end_dt = datetime.utcnow()
-    delta = timedelta(days=1)  # 每天一个时间段
-    all_new_repos = []
+    end_dt = start_dt + timedelta(days=BATCH_DAYS)
+    now_utc = datetime.utcnow()
+    if end_dt > now_utc:
+        end_dt = now_utc
+    start_str = start_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+    end_str = end_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    while start_dt < end_dt:
-        next_dt = min(start_dt + delta, end_dt)
-        start_str = start_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
-        end_str = next_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
-        print(f"Fetching repos from {start_str} to {end_str} ...")
-        created = github_search(QUERY, "created", start_str, end_str, PER_PAGE)
-        pushed = github_search(QUERY, "pushed", start_str, end_str, PER_PAGE)
-        all_new_repos.extend(created)
-        all_new_repos.extend(pushed)
-        start_dt = next_dt
-        time.sleep(1)  # 防止触发 rate limit
+    print(f"Fetching repos from {start_str} to {end_str} ...")
+    created = github_search(QUERY, "created", start_str, end_str, PER_PAGE)
+    pushed = github_search(QUERY, "pushed", start_str, end_str, PER_PAGE)
+    all_new_repos = created + pushed
 
     merged, added, updated = merge_repos(existing, all_new_repos)
     safe_write_json(DATA_FILE, merged)
     print(f"Merged repos -> added: {added}, updated: {updated}, total: {len(merged)}")
 
     update_readme(merged)
-    now_utc = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
-    set_last_run_time(now_utc)
-    print(f"Updated last_run_time to {now_utc}")
+    # 更新 last_run_time 为 batch 的结束时间
+    set_last_run_time(end_str)
+    print(f"Updated last_run_time to {end_str}")
 
 if __name__ == "__main__":
     main()
