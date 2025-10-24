@@ -47,7 +47,6 @@ def fetch_repos(start_date, end_date):
     page = 1
     headers = {"Authorization": f"token {GITHUB_TOKEN}"}
 
-    # GitHub Search API 查询使用 YYYY-MM-DD
     start_str = start_date.strftime("%Y-%m-%d")
     end_str = end_date.strftime("%Y-%m-%d")
 
@@ -60,7 +59,11 @@ def fetch_repos(start_date, end_date):
             break
         data = resp.json()
         items = data.get("items", [])
-        all_items.extend(items)
+        
+        # 实时打印每条仓库
+        for idx, repo in enumerate(items, start=1 + (page-1)*PER_PAGE):
+            print(f"Fetched repo #{idx}: {repo['full_name']}")
+            all_items.append(repo)
 
         if len(items) < PER_PAGE or page * PER_PAGE >= MAX_RESULTS:
             break
@@ -74,7 +77,7 @@ def fetch_repos(start_date, end_date):
 def merge_repos(existing, fetched):
     added = 0
     updated = 0
-    for repo in fetched:
+    for idx, repo in enumerate(fetched, start=1):
         key = repo["full_name"]
         created_at = repo["created_at"]
         updated_at = repo["updated_at"]
@@ -90,11 +93,17 @@ def merge_repos(existing, fetched):
                 "updated_at": updated_at
             }
             added += 1
+            action = "added"
         else:
-            # 更新最后更新时间
             if existing[key]["updated_at"] != updated_at:
                 existing[key]["updated_at"] = updated_at
                 updated += 1
+                action = "updated"
+            else:
+                action = "skipped"
+
+        print(f"Processed repo #{idx}: {key} -> {action}")
+
     print(f"Merged repos -> added: {added}, updated: {updated}, total: {len(existing)}")
     return existing
 
