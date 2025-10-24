@@ -2,8 +2,8 @@ name: Update Unity3D Repository List
 
 # 每小时执行一次（UTC 时区）
 on:
-  #schedule:
-  #  - cron: "0 * * * *"
+  schedule:
+    - cron: "0 * * * *"
   workflow_dispatch: {}
 
 # 使用最小权限（我们推送使用 PAT，所以不依赖 GITHUB_TOKEN 的写权限）
