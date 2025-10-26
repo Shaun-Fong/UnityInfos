@@ -175,8 +175,8 @@ def update_readme(repos):
         for date_key in sorted(years[year].keys()):
             month, day = date_key.split("_")
             count = years[year][date_key]
-            lines.append(f"[{year}-{month}-{day}](./{year}/{date_key}.md) - {count}")
-        lines.append("")
+            lines.append(f"[{year}-{month}-{day}](./{year}/{date_key}.md) - {count}\n")
+        lines.append("\n")
 
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
@@ -201,7 +201,7 @@ def generate_top1000(repos, filename="top1000.md"):
         full_name = repo["full_name"]
         stars = repo["stargazers_count"]
         url = repo["html_url"]
-        lines.append(f"[{full_name}]({url}) - ⭐ {stars}")
+        lines.append(f"[{full_name}]({url}) - ⭐ {stars}\n")
 
     with open(filename, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
