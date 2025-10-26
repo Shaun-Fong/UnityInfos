@@ -5,6 +5,7 @@ import json
 import os
 from datetime import datetime, timedelta
 import time
+from collections import defaultdict
 
 # ================= 配置 =================
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")  # GitHub Actions secret
@@ -13,12 +14,12 @@ LAST_RUN_FILE = ".github/data/last_run_time.txt"
 README_FILE = "README.md"
 
 QUERY = "unity OR unity3d"
-BATCH_DAYS = 1           # 每批抓取的天数
-PER_PAGE = 100           # 每页抓取数量
-MAX_RESULTS = 1000       # 每次搜索最大结果数（GitHub API 限制）
-TOTAL_FETCH_LIMIT = 3000 # 每次脚本执行抓取总数限制
-REQUEST_DELAY = 2        # 秒，避免触发 API rate limit
-MAX_DESC_LENGTH = 100    # description 最大长度
+BATCH_DAYS = 1
+PER_PAGE = 100
+MAX_RESULTS = 1000
+TOTAL_FETCH_LIMIT = 3000
+REQUEST_DELAY = 2
+MAX_DESC_LENGTH = 100
 
 # ================= 辅助函数 =================
 def load_last_run():
@@ -26,7 +27,6 @@ def load_last_run():
         with open(LAST_RUN_FILE, "r") as f:
             return f.read().strip()
     else:
-        # 初始抓取时间
         return "2020-01-01T00:00:00Z"
 
 def save_last_run(ts):
@@ -64,14 +64,11 @@ def fetch_repos(start_date, end_date):
         data = resp.json()
         items = data.get("items", [])
 
-        for i, repo in enumerate(items, start=1 + len(all_items)):
-            # 跳过没有 description 的仓库
+        for repo in items:
             if not repo.get("description"):
                 continue
-
             all_items.append(repo)
             print(f"Fetched {len(all_items)} / (max {MAX_RESULTS}) from {start_str} to {end_str}: {repo['full_name']}")
-
             if len(all_items) >= MAX_RESULTS:
                 break
 
@@ -104,77 +101,112 @@ def merge_repos(existing, fetched):
             }
             added += 1
         else:
-            # 更新最后更新时间
             if existing[key]["updated_at"] != updated_at:
                 existing[key]["updated_at"] = updated_at
+                existing[key]["stargazers_count"] = repo.get("stargazers_count", 0)
                 updated += 1
     print(f"Merged repos -> added: {added}, updated: {updated}, total: {len(existing)}")
     return existing
 
+
+# ================= 输出部分 =================
+def truncate(s, max_len):
+    if not s: return ""
+    return s if len(s) <= max_len else s[:max_len - 3] + "..."
+
+def write_repo_table(filepath, repo_list, title):
+    """输出单个 markdown 表格文件"""
+    NAME_DISPLAY_MAX = 20
+    DESC_DISPLAY_MAX = 120
+
+    lines = [f"# {title}", "", "| Name | Stars | Description | Updated |", "| ---- | -----:| ----------- | ------- |"]
+
+    for repo in sorted(repo_list, key=lambda x: x.get("stargazers_count", 0), reverse=True):
+        full_name = repo["full_name"]
+        name = full_name.split("/", 1)[-1]
+        url = repo["html_url"]
+        desc = truncate(repo.get("description", "").replace("\n", " "), DESC_DISPLAY_MAX)
+        updated = repo.get("updated_at", "").split("T")[0]
+        stars = repo.get("stargazers_count", 0)
+        lines.append(f"| [{name}]({url}) | {stars} | {desc} | {updated} |")
+
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+    print(f"Wrote {len(repo_list)} repos to {filepath}")
+
+def generate_daily_files(repos):
+    """按创建日期生成 YYYY/MM_DD.md 文件"""
+    grouped = defaultdict(list)
+    for repo in repos.values():
+        if not repo.get("description") or repo.get("stargazers_count", 0) <= 1:
+            continue
+        created = repo["created_at"][:10]  # YYYY-MM-DD
+        year, month, day = created.split("-")
+        grouped[(year, month, day)].append(repo)
+
+    for (year, month, day), repo_list in sorted(grouped.items()):
+        os.makedirs(year, exist_ok=True)
+        filename = f"{year}/{month}_{day}.md"
+        title = f"Unity Repositories created on {year}-{month}-{day}"
+        write_repo_table(filename, repo_list, title)
+
 def update_readme(repos):
-    """
-    生成 Markdown 表格版 README（服务器端截断，避免水平滚动）
-    - 只展示有 description 的仓库
-    - 只展示 star > 1 的仓库
-    - 截断 repo 名称和 description，超出部分以 "..." 表示
-    - 在链接中使用 title 属性保存完整信息，鼠标悬停可查看（tooltip）
-    """
-    NAME_DISPLAY_MAX = 20   # 仓库名称显示最大长度
-    DESC_DISPLAY_MAX = 120  # 描述显示最大长度
+    """生成按年份索引的 README.md"""
+    total_count = len(repos)
+    years = defaultdict(lambda: defaultdict(int))
 
-    def clean_text(s: str) -> str:
-        """清理文本，去掉换行和表格冲突字符"""
-        if not s:
-            return ""
-        return s.replace("\n", " ").replace("|", "｜").strip()
-
-    def truncate(s: str, max_len: int) -> str:
-        """按字符截断，超出加省略号"""
-        if not s:
-            return ""
-        if len(s) <= max_len:
-            return s
-        return s[:max_len - 3].rstrip() + "..."
+    for repo in repos.values():
+        if not repo.get("description") or repo.get("stargazers_count", 0) <= 1:
+            continue
+        created = repo["created_at"][:10]
+        year, month, day = created.split("-")
+        years[year][f"{month}_{day}"] += 1
 
     lines = []
     lines.append("# Unity3D Repositories Collection")
     lines.append(f"> Last updated: {datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}")
     lines.append("")
-    lines.append("---")
+    lines.append(f"仓库总数：{total_count}")
     lines.append("")
-    lines.append("| Name | Stars | Description | Updated |")
-    lines.append("| ---- | -----:| ----------- | ------- |")
 
-    # 仅保留：有 description 且 star > 1
-    repos_filtered = [
-        r for r in repos.values()
-        if r.get("description") and r.get("stargazers_count", 0) > 1
-    ]
-
-    # 按 star 数量排序（降序）
-    sorted_repos = sorted(repos_filtered, key=lambda x: x.get("stargazers_count", 0), reverse=True)
-
-    for repo in sorted_repos:
-        full_name = repo.get("full_name", "")
-        url = repo.get("html_url", "")
-        stars = repo.get("stargazers_count", 0)
-        display_name = full_name.split("/", 1)[-1] if "/" in full_name else full_name
-
-        desc_raw = clean_text(repo.get("description", "") or "")
-        desc_display = truncate(desc_raw, DESC_DISPLAY_MAX)
-        name_display = truncate(display_name, NAME_DISPLAY_MAX)
-
-        # 链接 + tooltip
-        link_html = f'<a href="{url}" title="{full_name}">{name_display}</a>'
-        desc_html = f'<span title="{desc_raw}">{desc_display}</span>'
-        updated = repo.get("updated_at", "").split("T")[0] if repo.get("updated_at") else ""
-
-        lines.append(f"| {link_html} | {stars} | {desc_html} | {updated} |")
+    for year in sorted(years.keys()):
+        lines.append(f"## {year}")
+        for date_key in sorted(years[year].keys()):
+            month, day = date_key.split("_")
+            count = years[year][date_key]
+            lines.append(f"[{year}-{month}-{day}](./{year}/{date_key}.md) - {count}")
+        lines.append("")
 
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
-    print(f"README.md updated, total repos shown: {len(sorted_repos)} (stars > 1, with description)")
+    print(f"README.md updated with yearly index (total repos: {total_count})")
+
+def generate_top1000(repos, filename="top1000.md"):
+    """生成 star 数量前 1000 的仓库列表"""
+    sorted_repos = sorted(
+        [r for r in repos.values() if r.get("stargazers_count", 0) > 1],
+        key=lambda x: x["stargazers_count"],
+        reverse=True
+    )[:1000]
+
+    lines = [
+        "# Top 1000 Unity3D Repositories (by Stars)",
+        f"> Last updated: {datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}",
+        ""
+    ]
+
+    for repo in sorted_repos:
+        full_name = repo["full_name"]
+        stars = repo["stargazers_count"]
+        url = repo["html_url"]
+        lines.append(f"[{full_name}]({url}) - ⭐ {stars}")
+
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+    print(f"Top 1000 list generated, total: {len(sorted_repos)}")
 
 
 # ================= 主逻辑 =================
@@ -190,34 +222,33 @@ def main():
     existing = load_existing_repos()
     total_fetched = 0
 
-    # 分 batch 抓取历史数据
     while last_run_date < now and total_fetched < TOTAL_FETCH_LIMIT:
         batch_end = min(last_run_date + timedelta(days=BATCH_DAYS), now)
         fetched = fetch_repos(last_run_date, batch_end)
 
-        # 超过总抓取限制则截断
         if total_fetched + len(fetched) > TOTAL_FETCH_LIMIT:
             fetched = fetched[:TOTAL_FETCH_LIMIT - total_fetched]
 
         existing = merge_repos(existing, fetched)
         save_repos(existing)
-        update_readme(existing)
 
         total_fetched += len(fetched)
         print(f"Total fetched in this run: {total_fetched} / {TOTAL_FETCH_LIMIT}")
 
-        # 如果超过总抓取限制，在中途停止，不推进 last_run_date
         if total_fetched >= TOTAL_FETCH_LIMIT:
             print("Reached total fetch limit for this run. Stopping batch fetch.")
-            # 因为当前 batch 没抓完，所以不要推进日期
             save_last_run(last_run_date.strftime("%Y-%m-%dT%H:%M:%SZ"))
             break
         else:
-            # 当前 batch 抓取完成，推进日期
             last_run_date = batch_end
             save_last_run(last_run_date.strftime("%Y-%m-%dT%H:%M:%SZ"))
 
         time.sleep(REQUEST_DELAY)
+
+    # 输出所有结果
+    generate_daily_files(existing)
+    update_readme(existing)
+    generate_top1000(existing)
 
 if __name__ == "__main__":
     main()
