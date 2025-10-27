@@ -150,47 +150,55 @@ def generate_daily_files(repos):
         write_repo_table(filename, repo_list, title)
 
 def update_readme(repos):
-    """生成按年份折叠的 README.md"""
-    # 先筛选有效仓库（有描述且 Star > 2）
-    valid_repos = [r for r in repos.values() if r.get("description") and r.get("stargazers_count", 0) > 2]
+    """README.md"""
+    total_count = len(repos)
+    years = defaultdict(lambda: defaultdict(int))
 
-    # 按年份分组
-    years = defaultdict(list)
-    for repo in valid_repos:
-        created = repo["created_at"][:10]  # YYYY-MM-DD
-        year = created.split("-")[0]
-        years[year].append(repo)
-
-    # 按年份排序
-    sorted_years = sorted(years.keys(), reverse=True)
+    for repo in repos.values():
+        if not repo.get("description") or repo.get("stargazers_count", 0) <= 1:
+            continue
+        created = repo["created_at"][:10]
+        year, month, day = created.split("-")
+        years[year][f"{month}_{day}"] += 1
 
     lines = []
     lines.append("# Unity3D Repositories Collection")
     lines.append(f"> Last updated: {datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}")
     lines.append("")
-    lines.append(f"仓库总数：{len(valid_repos)}")
+    lines.append(f"Total ：{total_count}")
+    lines.append("")
+    lines.append("[All](./date.md)")
+    lines.append("[Top 1000](./top1000.md)")
     lines.append("")
 
-    for year in sorted_years:
-        repo_list = sorted(years[year], key=lambda x: x.get("stargazers_count", 0), reverse=True)
-        lines.append(f"<details>")
-        lines.append(f"<summary>{year} - {len(repo_list)} repositories</summary>")
-        lines.append("")  # 空行
-        # 列出仓库信息
-        for repo in repo_list:
-            full_name = repo["full_name"]
-            stars = repo.get("stargazers_count", 0)
-            desc = repo.get("description", "").replace("\n", " ").strip()
-            lines.append(f"- [{full_name}]({repo['html_url']}) - ⭐ {stars} - {desc}")
-        lines.append("")  # 空行
-        lines.append("</details>")
-        lines.append("")  # 每个年份之间留空行
+    print(f"README.md updated with yearly index (total repos: {total_count})")
+
+def generate_date(repos, filename="date.md"):
+    """生成按照日期排列的仓库列表"""
+    total_count = len(repos)
+    years = defaultdict(lambda: defaultdict(int))
+
+    for repo in repos.values():
+        if not repo.get("description") or repo.get("stargazers_count", 0) <= 1:
+            continue
+        created = repo["created_at"][:10]
+        year, month, day = created.split("-")
+        years[year][f"{month}_{day}"] += 1
+
+    lines = []
+    lines.append(f"> Last updated: {datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}")
+    lines.append("")
+
+    for year in sorted(years.keys()):
+        lines.append(f"## {year}")
+        for date_key in sorted(years[year].keys()):
+            month, day = date_key.split("_")
+            count = years[year][date_key]
+            lines.append(f"[{year}-{month}-{day}](../{year}/{date_key}.md) - {count} repositories\n")
+        lines.append("\n")
 
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
-
-    print(f"README.md updated with yearly foldable sections (total repos: {len(valid_repos)})")
-
 
 def generate_top1000(repos, filename="top1000.md"):
     """生成 star 数量前 1000 的仓库列表"""
@@ -257,6 +265,7 @@ def main():
     # 输出所有结果
     generate_daily_files(existing)
     update_readme(existing)
+    generate_date(existing)
     generate_top1000(existing)
 
 if __name__ == "__main__":
