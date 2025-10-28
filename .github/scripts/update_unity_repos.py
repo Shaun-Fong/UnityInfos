@@ -194,7 +194,7 @@ def generate_date(repos, filename="date.md"):
         for date_key in sorted(years[year].keys()):
             month, day = date_key.split("_")
             count = years[year][date_key]
-            lines.append(f"[{year}-{month}-{day}](../{year}/{date_key}.md) - {count} repositories\n")
+            lines.append(f"[{year}-{month}-{day}](../main/{year}/{date_key}.md) - {count} repositories\n")
         lines.append("\n")
 
     with open(README_FILE, "w", encoding="utf-8") as f:
