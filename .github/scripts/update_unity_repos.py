@@ -149,7 +149,7 @@ def generate_daily_files(repos):
         title = f"Unity Repositories created on {year}-{month}-{day}"
         write_repo_table(filename, repo_list, title)
 
-def update_readme(repos, filename="date.md"):
+def update_readme(repos, filename="README.md"):
     """README.md"""
     total_count = len(repos)
     years = defaultdict(lambda: defaultdict(int))
