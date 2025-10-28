@@ -149,7 +149,7 @@ def generate_daily_files(repos):
         title = f"Unity Repositories created on {year}-{month}-{day}"
         write_repo_table(filename, repo_list, title)
 
-def update_readme(repos):
+def update_readme(repos, filename="date.md"):
     """README.md"""
     total_count = len(repos)
     years = defaultdict(lambda: defaultdict(int))
@@ -162,7 +162,6 @@ def update_readme(repos):
         years[year][f"{month}_{day}"] += 1
 
     lines = []
-    lines.append("# Unity3D Repositories Collection")
     lines.append(f"> Last updated: {datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}")
     lines.append("")
     lines.append(f"Total ：{total_count}")
@@ -170,6 +169,9 @@ def update_readme(repos):
     lines.append("[All](./date.md)")
     lines.append("[Top 1000](./top1000.md)")
     lines.append("")
+
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
 
     print(f"README.md updated with yearly index (total repos: {total_count})")
 
@@ -197,7 +199,7 @@ def generate_date(repos, filename="date.md"):
             lines.append(f"[{year}-{month}-{day}](../main/{year}/{date_key}.md) - {count} repositories\n")
         lines.append("\n")
 
-    with open(README_FILE, "w", encoding="utf-8") as f:
+    with open(filename, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
 def generate_top1000(repos, filename="top1000.md"):
