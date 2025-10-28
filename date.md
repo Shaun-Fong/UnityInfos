@@ -1,4 +1,4 @@
-> Last updated: 2025-10-28T11:18:36Z
+> Last updated: 2025-10-28T12:37:56Z
 
 ## 2015
 [2015-01-01](../main/2015/01_01.md) - 1 repositories
@@ -4385,5 +4385,42 @@
 [2020-12-26](../main/2020/12_26.md) - 16 repositories
 
 [2020-12-27](../main/2020/12_27.md) - 19 repositories
+
+[2020-12-28](../main/2020/12_28.md) - 23 repositories
+
+[2020-12-29](../main/2020/12_29.md) - 14 repositories
+
+[2020-12-30](../main/2020/12_30.md) - 13 repositories
+
+[2020-12-31](../main/2020/12_31.md) - 12 repositories
+
+
+
+## 2021
+[2021-01-01](../main/2021/01_01.md) - 11 repositories
+
+[2021-01-02](../main/2021/01_02.md) - 14 repositories
+
+[2021-01-03](../main/2021/01_03.md) - 16 repositories
+
+[2021-01-04](../main/2021/01_04.md) - 14 repositories
+
+[2021-01-05](../main/2021/01_05.md) - 13 repositories
+
+[2021-01-06](../main/2021/01_06.md) - 21 repositories
+
+[2021-01-07](../main/2021/01_07.md) - 19 repositories
+
+[2021-01-08](../main/2021/01_08.md) - 22 repositories
+
+[2021-01-09](../main/2021/01_09.md) - 13 repositories
+
+[2021-01-10](../main/2021/01_10.md) - 12 repositories
+
+[2021-01-11](../main/2021/01_11.md) - 15 repositories
+
+[2021-01-12](../main/2021/01_12.md) - 19 repositories
+
+[2021-01-13](../main/2021/01_13.md) - 13 repositories
 
 
