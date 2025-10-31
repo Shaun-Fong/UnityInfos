@@ -166,8 +166,11 @@ def update_readme(repos, filename="README.md"):
     lines.append("")
     lines.append(f"Total ：{total_count}")
     lines.append("")
-    lines.append("[All](./date.md)")
+    lines.append("[Daily](./date.md)")
+    lines.append("")
     lines.append("[Top 1000](./top1000.md)")
+    lines.append("")
+    lines.append("[Raw Data](./.github/data/repos.json)")
     lines.append("")
 
     with open(filename, "w", encoding="utf-8") as f:
